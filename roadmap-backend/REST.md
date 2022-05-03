@@ -8,6 +8,10 @@
 
 [exposing database ids (about security)](https://stackoverflow.com/questions/396164/exposing-database-ids-security-risk) (exposes data size, see also [this](https://stackoverflow.com/questions/56576985/is-it-a-bad-practice-to-expose-the-database-id-to-the-client-in-your-rest-api)
 
+[custom header v.s. query parameter](https://stackoverflow.com/questions/9169081/rest-apis-custom-http-headers-vs-url-parameters)
+
+[The only rule you should obey is that a custom header should begin by `X-`](https://stackoverflow.com/a/37168084)
+
 ## http method
 
 知乎 - [我所在的公司规定所有接口都用 post 请求](https://www.zhihu.com/question/336797348)
@@ -19,6 +23,8 @@
 ## http response
 
 [should no results be an error?](https://softwareengineering.stackexchange.com/questions/358243/should-no-results-be-an-error-in-a-restful-response)
+
+[any standard for json api response format?](https://stackoverflow.com/questions/12806386/is-there-any-standard-for-json-api-response-format)
 
 ### status code
 
@@ -41,3 +47,4 @@ Endpoint values which contain a leading `/` are absolute. Absolute values retain
 ## helping links
 
 - [http cats](https://http.cat/)
+- [Google JSON Guid](https://google.github.io/styleguide/jsoncstyleguide.xml)

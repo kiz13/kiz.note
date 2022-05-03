@@ -90,6 +90,17 @@ order by multiple column `order by column1 desc, column2 asc`
 
 add a comment to the table `alter table tbl comment = 'wo'`
 
+[case-sensitive search](https://stackoverflow.com/questions/2876789/how-can-i-search-case-insensitive-in-a-column-using-like-wildcard) `select xxx ... COLLATE utf8_general_ci`
+
+[differences between different date time function](https://stackoverflow.com/questions/28315254/difference-between-sysdate-now-current-timestamp-current-timestamp-in-mysq)
+
+[about varchar length, see also the comments](https://stackoverflow.com/a/1303484) The length of `VARCHAR` columns can be specified as a value from 0 to 255 before MySQL 5.0.3, and 0 to 65,535 in 5.0.3 and later versions. Bill Karwin commented that "FWIW, MySQL accepts `VARCHAR(65536)` too, but it **implicitly promotes** the column to `MEDIUMTEXT`"
+
+`SUBSTRING_INDEX(str,delim,count)` returns the substring from string `str` before `count` occurrences of the delimiter `delim`. If count is negative, everything to the right of the final delimiter (counting from the right) is returned. [reference docs](https://dev.mysql.com/doc/refman/8.0/en/string-functions.html#function_substring-index)
+
+- `SELECT SUBSTRING_INDEX('www.mysql.com', '.', -2);` gives `'mysql.com'`
+- `SELECT SUBSTRING_INDEX('www.mysql.com', '.', 2);` gives `'www.mysql'`
+
 ## data type
 
 [difference between utf8mb4 and utf8?](https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql)

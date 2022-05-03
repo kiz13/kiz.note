@@ -118,6 +118,8 @@
 
 - use lambda or method references? [choose the more readable one](https://stackoverflow.com/questions/24487805/lambda-expression-vs-method-reference)
 
+- ["continue" within a foreach loop](https://stackoverflow.com/questions/32654929/move-to-next-item-using-java-8-foreach-loop-in-stream) using `return` would just work (it stops executing the current iteration)
+
 ## files
 
 - how do I cause Word to open and edit a file? [source](https://stackoverflow.com/a/6871727/11844003)

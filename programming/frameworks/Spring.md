@@ -30,6 +30,8 @@ return `ResponseEntity` vs return pojo [Returning just a bean is fine but doesn'
 
 Where does the `@Transactional` annotation belong? [I think transactions belong on the service layer. It's the one that knows about units of work and use cases.](https://stackoverflow.com/a/1079125/11844003)
 
+[setting custom properties in a spring-boot way](https://stackoverflow.com/a/32066380)
+
 ## todo
 
 [configure logger](https://stackoverflow.com/questions/30571319/spring-boot-logging-pattern)

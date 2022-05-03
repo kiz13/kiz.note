@@ -43,3 +43,5 @@ A [JDBC driver](https://en.wikipedia.org/wiki/JDBC_driver) is a software compone
 [is EAV bad?](https://softwareengineering.stackexchange.com/questions/93124/eav-is-it-really-bad-in-all-scenarios)
 
 [is EAV really an anti-pattern](https://stackoverflow.com/questions/31347290/eav-in-an-ecommerce-case-is-it-really-an-anti-pattern)
+
+[How to design a database for User Defined Fields?](https://stackoverflow.com/questions/5106335/how-to-design-a-database-for-user-defined-fields)
