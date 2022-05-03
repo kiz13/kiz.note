@@ -5,6 +5,7 @@ A [preamble](https://www.vocabulary.com/dictionary/preamble) is a brief introduc
 - 使用 `@Bean` 定義 Bean 的時候, 預設會使用方法的名稱作為 Bean 的名稱
 - `@Autowired` If a class only declares a single constructor to begin with, it will always be used, even if not annotated. An annotated constructor does not have to be public.
 - `PropertySourcesPlaceholderConfigurer`
+
   ```text
     // 該實例是 Spring 本身需要的 Bean
     // @Configuration 標註的類別在載入之後，生成實例之前，就
@@ -15,8 +16,19 @@ A [preamble](https://www.vocabulary.com/dictionary/preamble) is a brief introduc
       return new PropertySourcesPlaceholderConfigurer();
     }
   ```
+
 - `MappingJackson2HttpMessageConverter`
 - `@ResponseBody` automatically handles the serialization of data passed into the service as JSON(default)
+
+---
+
+@Autowired HttpServletRequest vs passing as parameter? [both are ok](https://stackoverflow.com/a/48575275/11844003) Spring stores the `HttpServletRequest` into a `ThreadLocal` type variable, which is a thread-safe map that keeps `HttpServletRequest` in the current thread context.
+
+validation in controller or service? [In the service.](https://stackoverflow.com/a/46480007/11844003) Controllers should be light-weight and pass on requests.
+
+return `ResponseEntity` vs return pojo [Returning just a bean is fine but doesn't give you much flexibility.](https://stackoverflow.com/a/49673748/11844003) `ResponseEntity<T>` represents the **entire HTTP response**.
+
+Where does the `@Transactional` annotation belong? [I think transactions belong on the service layer. It's the one that knows about units of work and use cases.](https://stackoverflow.com/a/1079125/11844003)
 
 ## todo
 
@@ -82,6 +94,8 @@ A [preamble](https://www.vocabulary.com/dictionary/preamble) is a brief introduc
 
 - com.mysql.cj.jdbc.exceptions.CommunicationsException [check this](https://stackoverflow.com/questions/69394504/connection-com-mysql-cj-jdbc-connectionimplee48bb3-marked-as-broken-because-of) and [this](https://stackoverflow.com/questions/11301707/attempt-to-reconnect-jdbc-pool-datasource-after-database-restarts)
 
+- [v2ex Hikari 连接池，连接超时被关闭](https://www.v2ex.com/t/688926#r_9231887)
+
 ## old world
 
 - [war file: could not find or load main class?](https://stackoverflow.com/a/51841838/11844003) try packaging the WAR with maven plugin
@@ -111,3 +125,5 @@ A [preamble](https://www.vocabulary.com/dictionary/preamble) is a brief introduc
 ## helping links
 
 - [開源框架：Spring](https://openhome.cc/Gossip/Spring/index.html)
+- [programmatic transaction management](https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch11s06.html)
+- [spring boot with docker](https://spring.io/guides/gs/spring-boot-docker/)

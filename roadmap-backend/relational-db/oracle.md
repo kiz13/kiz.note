@@ -113,6 +113,8 @@ adrci> purge -age 60 -type ALERT
 
 - [Kill, cancel, resume or restart datapump expdp and impdp jobs (ORA-31626, ORA-31633, ORA-06512, ORA-00955)](https://blog.oracle48.nl/killing-and-resuming-datapump-expdp-and-impdp-jobs/)
 
+- [How to kill, cancel, restart, stop data pump jobs](http://amit7oracledba.blogspot.com/2013/06/how-to-kill-cancel-restart-stop-data.html)
+
 - [deep into `table_exists_action`](https://blog.csdn.net/huang_xw/article/details/7182577)
 
 ## sql stuff
@@ -248,7 +250,7 @@ implicit number and character conversion
 - `partition by`
   - [detailed explanation](https://stackoverflow.com/a/561884/11844003)
   - [can also be used to discard duplicates](https://stackoverflow.com/a/32637419/11844003)
-  - [](https://stackoverflow.com/questions/54073534/how-to-use-alias-name-with-partition-by-in-sql)
+  - [use alias name](https://stackoverflow.com/questions/54073534/how-to-use-alias-name-with-partition-by-in-sql)
 
 - `DUMP` returns a VARCHAR2 value containing the datatype code, length in bytes, and internal representation of expr. [check](https://docs.oracle.com/cd/B28359_01/server.111/b28286/functions048.htm#SQLRF00635)
 

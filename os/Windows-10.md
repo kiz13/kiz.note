@@ -1,5 +1,7 @@
 # Windows 10
 
+每天（默认有网络连接）更新的锁屏壁纸存放在哪里？`%AppData%\Local\Packages\Microsoft.Windows.ContentDeliveryManager_xxx\LocalState\Assets` 里
+
 ## 重装系统后
 
 ### 驱动
@@ -15,7 +17,7 @@
 
 to [disable internet search](https://superuser.com/questions/1196618/how-to-disable-internet-search-results-in-start-menu-post-creators-update#), run the following commands in Powershell
 
-```
+```text
 reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v BingSearchEnabled /t REG_DWORD /d 0
 reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v AllowSearchToUseLocation /t REG_DWORD /d 0
 reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v CortanaConsent /t REG_DWORD /d 0
@@ -74,7 +76,7 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 
 [remove items from the right click context menu](https://superuser.com/questions/5011/how-to-remove-items-from-the-right-click-context-menu-in-windows)
 
-[电脑设置了不锁屏，但是过几十分钟还会自动熄屏](https://stackoverflow.com/a/20256087/11844003) 用脚本模拟鼠标移动 (what about PowerToy? YES)
+电脑设置了不锁屏，但是过几十分钟还会自动熄屏，怎么解？use NirCmd or someone's utility `mouse.bat` [source](https://stackoverflow.com/questions/13807543/windows-command-script-that-moves-mouse-cursor-n-pixels/20256087#20256087)  (now, what about PowerToy? YES)
 
 ["open with" not appearing as an option](https://superuser.com/questions/841497/windows-open-with-application-not-appearing-as-an-option)
 
@@ -84,6 +86,8 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 3. `ftype {f_assoc}` the `f_assoc` is the output of the last command (or the one you decided), e.g.
    - `ftype javaclass` -> xxx no xxx ? make it, `ftype javaclass="path\to\jd-gui.exe" "%1"` : good to go
    - note, `ftype` with no parameters will display all file types and the executable program for each
+
+[how to open a file for editing in administrator mode?](https://superuser.com/questions/219179/how-to-open-a-file-for-editing-in-administrator-mode)
 
 ## why
 
@@ -105,6 +109,10 @@ When a file is written to a file system, it may consume slightly more [disk spac
 
 touch-pad lagging movement - 断电之后触摸板好使了，插上电后又恢复迟钝的状态，可能是那个插座 **电工偷工减料220v火线没有接地线导致有弱点干扰了笔记本电容触屏控** [出处](https://www.bilibili.com/read/cv6924005)
 
+[Why does Windows use backslashes for paths and Unix forward slashes?](https://superuser.com/questions/176388/why-does-windows-use-backslashes-for-paths-and-unix-forward-slashes)
+
+[Why are changes to my PATH not being recognised?](https://superuser.com/questions/107521/why-are-changes-to-my-path-not-being-recognised)
+
 ### wtf
 
 [微软拼音输入法未显示选字栏](https://blog.csdn.net/Reborn_Lee/article/details/107445793) 微软拼音 -> 常规 -> 兼容性 -> 选择以前版本的输入法
@@ -124,6 +132,8 @@ git bash chinese garbled [try this one?](https://gist.github.com/nightire/506959
 鼠标左键双击打开了属性窗口 - alt 键卡了?
 
 windows [reduce osd time out](https://superuser.com/questions/1006965/how-to-reduce-osd-time-out), 5s is the minimum value
+
+Typing `python` on Windows 10 (version 1903) command prompt opens Microsoft store? Deleting `%AppData%\Local\Microsoft\WindowsApps\` PATH from the system environment variable solved this issue. [source](https://superuser.com/a/1442909/1233932)
 
 ## todo
 

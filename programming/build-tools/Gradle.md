@@ -84,3 +84,5 @@ Several ways to use an init script: [hmm....](https://docs.gradle.org/current/us
 [unknown property `mainclass`?](https://stackoverflow.com/questions/61976771/could-not-set-unknown-property-mainclass-for-extension-application)
 
 [apply android gradle plugin using new syntax](https://stackoverflow.com/questions/43128340/apply-android-gradle-plugin-using-new-syntax)
+
+[differences between `implementation`, `api` and `compile`](https://stackoverflow.com/questions/44493378/whats-the-difference-between-implementation-api-and-compile-in-gradle)

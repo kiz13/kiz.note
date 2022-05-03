@@ -71,6 +71,8 @@
 
 ## E
 
+[Emoticon](https://en.wikipedia.org/wiki/Emoticon) An emoticon (/ɪˈmoʊtɪkɒn/, ə-MOH-tə-kon, rarely pronounced /ɪˈmɒtɪkɒn/, ih-MO-tih-kon), short for "emotion icon", is a pictorial representation of a facial expression using characters—usually punctuation marks, numbers, and letters—to express a person's feelings, mood or reaction, or as a time-saving method.
+
 ## F
 
 - **f.lux** ... adjusts a display's [color temperature](https://en.wikipedia.org/wiki/Color_temperature) ... reduce eye strain during night-time use, helping to reduce disruption of sleep patterns.
@@ -150,6 +152,8 @@
 - **Spinnin' Records** is a Dutch electronic music [record label](https://en.wikipedia.org/wiki/Record_label). In September 2017, Warner Music Group acquired Spinnin' Records for over $100 million.
 
 - The **square foot (平方英尺)** (plural **square feet**; abbreviated sq. ft, sf, or ft²) is an imperial unit. 1 square foot is equivalent to 144 square inches, around 0.09290304 square meters
+
+- The phrase [Standing on the shoulders of giants](https://en.wikipedia.org/wiki/Standing_on_the_shoulders_of_giants) is a metaphor which means "Using the understanding gained by major thinkers who have gone before in order to make intellectual progress".
 
 ## T
 

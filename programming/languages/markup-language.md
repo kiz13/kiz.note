@@ -6,6 +6,8 @@ https://en.wikipedia.org/wiki/Markup_language
 
 The XML declaration show be the top line. [ref](https://stackoverflow.com/questions/19889132/error-the-processing-instruction-target-matching-xxmmll-is-not-allowed)
 
+What does `<![CDATA[]]>` mean? [CDATA stands for Character Data](https://stackoverflow.com/a/2784200/11844003), and it means that the data in between these strings includes data that _could_ be interpreted as XML markup, but should not be.
+
 ## tex
 
 [latex & markdown mix?](https://stackoverflow.com/questions/2188884/how-can-i-mix-latex-in-with-markdown)

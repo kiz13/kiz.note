@@ -1,11 +1,11 @@
 # *
 
-[Never code for performance, always code for readability.](https://stackoverflow.com/a/1923866)
-
 ## java web
 
 - [eclipse 根据 `.wsdl` 文件自动生成 webservice 的调用客户端](https://www.cnblogs.com/wqsbk/p/5297223.html)
 - [jax-rs multiple paths?](https://stackoverflow.com/questions/4784028/jax-rs-multiple-paths/34921732) using _RESTEasy_ go with `@Path("/{a:path1|path2}")` if you want two paths to go to the same method.
+- [why with the `@Consumes(MediaType.APPLICATION_JSON)` annotation, my method gets request body as string](https://stackoverflow.com/questions/24588822/consumesmediatype-application-json-annotation-but-getting-request-body-as-str)
+- [javax-servlet api vs servlet api](https://stackoverflow.com/questions/34349047/difference-between-javax-servlet-api-jar-vs-servlet-api-jar)
 
 ## remote debug
 
@@ -25,12 +25,21 @@
 - convert wsdl to java classes `wsimport -keep -s dest-folder the-wsdl-url`
 - [change compiled class file without decompile?](https://stackoverflow.com/questions/14069082/how-to-change-already-compiled-class-file-without-decompile) try using Recaf
 - [why is `java -version` returning a different version to the one defined in JAVA_HOME?](https://superuser.com/questions/237737/why-is-java-version-returning-a-different-version-to-the-one-defined-in-java-ho) Run `where java` to see if it prints something quite unexpected.
+- compiling multiple jar using javac, you need to [stop the shell from `globbing` the wild-card in `lib/*.jar` by escaping it](https://stackoverflow.com/questions/30313812/compiling-multiple-jar-and-java-files-using-javac)
+- [the dollar sign has special meaning to most shells](https://stackoverflow.com/a/18442432/11844003)
+- console outputs garbled characters? try go with `-Dfile.encoding=UTF-8`
+- [change the display language of javac?](https://stackoverflow.com/questions/23749714/how-to-change-the-display-language-of-javac-to-english) add this option: `-J-Duser.language=en`
+- [a generic reference Q&A for new Java users about ](https://stackoverflow.com/questions/18093928/what-does-could-not-find-or-load-main-class-mean) couldn't find or load main class
+- [use of java server option](https://stackoverflow.com/questions/17608639/use-of-java-server-option)
+- [modify a file inside a jar](https://stackoverflow.com/questions/1224817/modifying-a-file-inside-a-jar) use `jar uf jar-file new-files`
+- [Can't execute jar: "no main manifest attribute"](https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute) to make a jar executable, you need to jar a file called META-INF/MANIFEST.MF
+- [why do jvm arguments start with `-D`](https://stackoverflow.com/questions/44745261/why-do-jvm-arguments-start-with-d)
 
 ---
 
 The default class path is the current directory. Setting the `CLASSPATH` variable or using the `-cp (-classpath)` command-line option overrides that default, so if you want to include the current directory in the search path, you must include "." in the new settings.
 
-Classpath entries that are neither directories nor archives (.zip or .jar files) nor * are ignored[.](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html)
+Classpath entries that are neither directories nor archives (.zip or .jar files) nor * are ignored.
 
 ```shell script
 javac Sun.java
@@ -39,9 +48,6 @@ java Sun
 ```
 
 The `java` launches the Java virtual machine. It executes the bytecodes that the compiler placed in the class file.
-
-VM option: `-Duser.language=en` ; command-line option: `-J-Duser.language=en`
-[](https://stackoverflow.com/questions/23749714/how-to-change-the-display-language-of-javac-to-english)
 
 `jar [-]cvf JAR_FILE_NAME FILE1 FILE2`
 
@@ -70,15 +76,17 @@ To update the manifest of an existing JAR file, place the additions into a text 
 
 - `e` specify application entry point for stand-alone application bundled into an executable jar file
 
-command argument? `-J-Duser.language=en`
-
-- [the dollar sign has special meaning to most shells](https://stackoverflow.com/a/18442432/11844003)
-
-the `-server` option: Select the Java HotSpot Server VM. On a 64-bit capable jdk only the Java HotSpot Server VM is supported so this option is implicit. This is subject to change in a future release. see also [hollow](https://stackoverflow.com/questions/17608639/use-of-java-server-option)
-
-console outputs garbled characters? try go with `-Dfile.encoding=UTF-8`
+the `-server` option: Select the Java HotSpot Server VM. On a 64-bit capable jdk only the Java HotSpot Server VM is supported so this option is implicit. This is subject to change in a future release.
 
 [Configuring the JVM, Java Options, and Database Cache](https://docs.oracle.com/cd/E37116_01/install.111210/e23737/configuring_jvm.htm#OUDIG00007)
+
+### ssl
+
+[import what](https://stackoverflow.com/a/22406950/11844003) `keytool -import -keystore ../jre/lib/security/cacerts -trustcacerts -alias "VeriSign Class 3 International Server CA - G3" -file /pathto/SVRIntlG3.cer`
+
+[when import certificate using `java`, the default password is `changeit`](https://superuser.com/questions/1506440/import-certificates-using-command-line-on-windows)
+
+[unable to find valid certification path to requested target?](https://stackoverflow.com/questions/65721938/unable-to-find-valid-certification-path-to-requested-target-when-loading-rdf-fr). Set `-Dcom.sun.security.enableAIAcaIssuers=true` would enable automatic intermediate certificate download
 
 ## groovy
 

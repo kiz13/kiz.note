@@ -4,6 +4,8 @@ use of <kbd>Shift</kbd> + scroll wheel is common for horizontal scrolling
 
 [obs 怎么用](https://www.zhihu.com/question/265231508/answer/588785627)
 
+[copying an url from browser's address bar gives encoded one?](https://stackoverflow.com/questions/18176661/copying-a-utf-8-url-from-browsers-address-bar-gives-only-the-ugly-encoded-one)
+
 ## Chrome
 
 (chrome) <kbd>Shift</kbd> + <kbd>Esc</kbd> opens task manager
@@ -70,10 +72,6 @@ chrome not opening any pages? Maybe some extension cause it, uninstall 'em to ch
 ## Telegram
 
 Telegram ... re-encoding all GIFs to mpeg4 videos that require up to 95% less disk space for the same image quality.
-
-## Twitter
-
-**bookmarks**
 
 ## Evernote
 

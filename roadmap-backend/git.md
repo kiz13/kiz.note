@@ -20,11 +20,23 @@ local docs `${git-installation-directory}/mingw64/share/doc/git-doc/`
 - `git branch -a` list both remote-tracking branches and local branches
 - `git stash list` and `git stash pop`
 
+[abort merge conflict](https://stackoverflow.com/questions/101752/i-ran-into-a-merge-conflict-how-can-i-abort-the-merge) `git reset --merge` for git version >= 1.6.1
+
+add line break to the commit message? [Simon's answer](https://stackoverflow.com/a/5070502/11844003) the command below creates separate paragraphs - not lines.
+
+  ```shell
+  git commit -m "head line" -m "content line." 
+  ```
+
 ### undo
 
 [undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add) `git reset` will unstage all the files you've added after your last commit
 
-[undo a git reset ?](https://stackoverflow.com/questions/2510276/how-to-undo-git-reset) `git reset 'HEAD@{xxx}'`
+[undo a git reset?](https://stackoverflow.com/questions/2510276/how-to-undo-git-reset) `git reset 'HEAD@{xxx}'`
+
+[undo a git reset hard?](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1) it should be similar to the question above
+
+[yet another git reset](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
 
 ### remote access
 
@@ -37,6 +49,10 @@ clone a repository
 
 [clone just one branch](https://stackoverflow.com/a/14930421/11844003) `git clone -b another_one --single-branch git_repo`
 
+[download a single folder or directory](https://stackoverflow.com/questions/7106012/download-a-single-folder-or-directory-from-a-github-repo)
+
+[clone a subdirectory only](https://stackoverflow.com/questions/600079/how-do-i-clone-a-subdirectory-only-of-a-git-repository/52269934#52269934)
+
 [git clone with ssl verify](https://stackoverflow.com/questions/11621768/how-can-i-make-git-accept-a-self-signed-certificate)
 
 [push changes to remote branch](https://stackoverflow.com/questions/36139275/git-pushing-to-remote-branch)
@@ -47,13 +63,24 @@ clone a repository
 
 [git asks for username and pwd every time I push](https://stackoverflow.com/questions/11403407/git-asks-for-username-every-time-i-push) use the globally configured info `git config credential.helper store`
 
+[delete remote branch](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely) `git push -d origin branch-name` the `origin` is the remote name ini most cases
+
+[delete a git branch remotely](https://stackoverflow.com/questions/2003505/how-do-i-delete-a-git-branch-locally-and-remotely)
+
+- `git push -d <remote_name> <branchname>`
+
 ### configuration
 
 [get start with first time setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-`git config --global --unset core.xxx`
+`git config -l --show-origin` view all settings
 
-`git config --list`
+- `-l` --list, list all variables set in config file, along with their values.
+- `--show-origin` show the actual origin (config file path, ref, or blob id if applicable).
+
+`git config --global user.name "John Doe"`
+
+`git config --global --unset core.xxx`
  
 [where is the global `.gitconfig` file](https://stackoverflow.com/a/17619024/11844003), do a `git config --global -e` and then, if you're lucky, you will get a text editor loaded with the global `.gitconfig` file. (created if missing)
 
@@ -74,8 +101,6 @@ clone a repository
 
 - `-r` recurse into subdirectories
 - `--name-only` show only the file names
-
-`git config --list --show-origin` shows the origin file of each config item
 
 #### diff
 
@@ -100,5 +125,6 @@ clone a repository
 - someone's blog [a successful git branching model](https://nvie.com/posts/a-successful-git-branching-model/)
 - [A collection of useful `.gitattributes` templates](https://github.com/alexkaratarakis/gitattributes)
 - [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
+- [bitbucket - no foxtrot merge](https://bitbucket.org/blog/no-foxtrot-merges-allowed)
 
 ## end

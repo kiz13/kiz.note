@@ -82,6 +82,7 @@ tasklist /fi "imagename eq nginx.exe"
 
 or more properly, [add you machine's ip](https://stackoverflow.com/questions/38551166/403-access-denied-on-tomcat-8-manager-app-without-prompting-for-user-password) like `allow="xxx|xxx|your.freaking.ip.address"`
 
+`java.nio.file.AccessDeniedException` how to allow permissions to a java app deployed on tomcat? [Permissions are always given to users, not to applications.](https://coderanch.com/t/731454/application-servers/Permission-permissions-java-app-deployed)
 
 ## testing
 
@@ -105,13 +106,9 @@ or more properly, [add you machine's ip](https://stackoverflow.com/questions/385
 
 [fix an incomplete ssl chain?](https://superuser.com/questions/644343/how-do-you-fix-an-incomplete-ssl-chain) see also [this](https://superuser.com/questions/644343/how-do-you-fix-an-incomplete-ssl-chain)
 
-[import what](https://stackoverflow.com/a/22406950/11844003) `keytool -import -keystore ../jre/lib/security/cacerts -trustcacerts -alias "VeriSign Class 3 International Server CA - G3" -file /pathto/SVRIntlG3.cer`
-
-[unable to find valid certification path to requested target?](https://stackoverflow.com/questions/65721938/unable-to-find-valid-certification-path-to-requested-target-when-loading-rdf-fr). Set `-Dcom.sun.security.enableAIAcaIssuers=true` would enable automatic intermediate certificate download
-
 [ssl test](https://www.ssllabs.com/ssltest/analyze.html?d=ahwa.viegroup.cc)
 
-[when import certificate using `java`, the default password is `changeit`](https://superuser.com/questions/1506440/import-certificates-using-command-line-on-windows)
+[知乎 - 为什么 SSL 证书要花钱购买，而不是政府免费发放，怎么知道卖证书的是否可信任](https://www.zhihu.com/question/22869797/answer/2219249469)
 
 ## caching
 
@@ -203,11 +200,15 @@ that the Docker daemon calls while creating an image. It contains all the info t
 
 `docker run -p ip:container_ip ass/hole` run in a new container (publish [`--expose`] container's port to the host)
 
-#### quick links
+#### helping links
 
 [should each image contain a jdk?](https://stackoverflow.com/questions/52849139/should-each-docker-image-contain-a-jdk)
 
 [reddit - run multi containers using the same base image](https://www.reddit.com/r/docker/comments/kqd1ef/if_you_run_multiple_containers_of_the_same_image/)
+
+[user manual](https://docs.docker.com/desktop/windows/)
+
+[commandline reference](https://docs.docker.com/engine/reference/commandline/)
 
 ## version control
 

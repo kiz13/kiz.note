@@ -37,3 +37,7 @@ Endpoint values which contain a leading `/` are absolute. Absolute values retain
 ### versioning
 
 [best practice, api versioning](https://stackoverflow.com/questions/389169/best-practices-for-api-versioning)
+
+## helping links
+
+- [http cats](https://http.cat/)

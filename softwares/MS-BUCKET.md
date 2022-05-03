@@ -6,6 +6,10 @@
 
 If you remove the "Move to OneDrive" context menu, it will also remove all the context menu items below for when you right-click on an item inside the OneDrive folder.
 
+## OneNote
+
+the indents disappear when pasting text into onenote (text is copied from IDE) [here is an issue opened at vscode git repo](https://github.com/Microsoft/vscode/issues/35954)
+
 ## WSL
 
 [home dir?](https://superuser.com/questions/1185033/what-is-the-home-directory-on-windows-subsystem-for-linux) `%LOCALAPPDATA%\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs`
@@ -22,6 +26,8 @@ jetbrains [setup wsl development env](https://www.jetbrains.com/help/idea/how-to
 
 [crontab not working ?](https://stackoverflow.com/questions/41281112/crontab-not-working-with-bash-on-ubuntu-on-windows) `usermod -a -G crontab kiz`
 
+[where is the ubuntu file system root directory?](https://askubuntu.com/questions/759880/where-is-the-ubuntu-file-system-root-directory-in-windows-subsystem-for-linux-an)
+
 ## Windows Terminal
 
 - [ ] [Windows terminal caret thickness](https://github.com/microsoft/terminal/issues/4335)
@@ -29,8 +35,6 @@ jetbrains [setup wsl development env](https://www.jetbrains.com/help/idea/how-to
 [Powershell Profiles配置文件的存放位置介绍](https://www.cnblogs.com/backpacker/p/4711823.html)
 
 [customize-settings official site](https://docs.microsoft.com/en-us/windows/terminal/customize-settings/profile-appearance)
-
-[use putty to connect remote server](https://stackoverflow.com/a/12118746/11844003)
 
 [usages with panes](https://docs.microsoft.com/en-us/windows/terminal/panes)
 
@@ -40,7 +44,24 @@ jetbrains [setup wsl development env](https://www.jetbrains.com/help/idea/how-to
 
 [beautify the powershell with _oh-my-posh_ -> some tokens are grey -> `Set-PSReadlineOption -TokenKind Operator -ForegroundColor Yellow` not working?](https://stackoverflow.com/questions/52309625/a-parameter-cannot-be-found-that-matches-parameter-name-tokenkind) `Set-PSReadLineOption -Colors @{Operator = "Yellow"; Parameter = "Yellow"}`
 
-[use ssh](https://stackoverflow.com/questions/57363597/how-to-use-a-new-windows-terminal-app-for-ssh)
+git bash icon file location: `${git-installation-directory}/mingw64/share/git/git-for-windows.ico`
+
+this [pull request (merged)](https://github.com/microsoft/terminal/pull/1005) allows you to write comments in the configuration file which is of json format.
+
+remove the powershell start text? [Add the `-nologo` option to the PowerShell command line](https://stackoverflow.com/a/63695674/11844003), then it starts the PowerShell console without displaying the copyright banner.
+
+### remote
+
+[use ssh](https://stackoverflow.com/questions/57363597/how-to-use-a-new-windows-terminal-app-for-ssh) `ssh user@host`
+
+[use putty to connect remote server](https://stackoverflow.com/a/12118746/11844003)
+
+- `plink -pw [password] [user@]host [command]`
+- `putty.exe -ssh [username]@[hostname] -pw [password]`
+
+[config the XLaunch](https://superuser.com/questions/1372854/do-i-launch-the-app-xlaunch-for-every-login-to-use-gui-in-ubuntu-wsl-in-windows/1372940)
+
+[exit out of ssh connections and close putty?](https://unix.stackexchange.com/questions/41682/exit-out-of-all-ssh-connections-in-one-command-and-close-putty)
 
 ## VS Code
 

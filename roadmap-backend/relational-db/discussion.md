@@ -28,6 +28,12 @@ A [JDBC driver](https://en.wikipedia.org/wiki/JDBC_driver) is a software compone
 
 - [use junction table for dealing many-to-many relationship](https://dba.stackexchange.com/questions/106001/are-junction-tables-a-good-practice)
 
+- [how does indexing work?](https://stackoverflow.com/questions/1108/how-does-database-indexing-work)
+
+- [physical | logical / hard | soft delete of record](https://stackoverflow.com/questions/378331/physical-vs-logical-hard-vs-soft-delete-of-database-record)
+
+- [differences between `truncate` and `delete`](https://stackoverflow.com/questions/139630/whats-the-difference-between-truncate-and-delete-in-sql)
+
 ## relation?
 
 [Entity-attribute-value model](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
