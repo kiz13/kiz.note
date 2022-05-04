@@ -1,7 +1,5 @@
 # Windows 10
 
-每天（默认有网络连接）更新的锁屏壁纸存放在哪里？`%AppData%\Local\Packages\Microsoft.Windows.ContentDeliveryManager_xxx\LocalState\Assets` 里
-
 ## 重装系统后
 
 ### 驱动
@@ -134,6 +132,11 @@ git bash chinese garbled [try this one?](https://gist.github.com/nightire/506959
 windows [reduce osd time out](https://superuser.com/questions/1006965/how-to-reduce-osd-time-out), 5s is the minimum value
 
 Typing `python` on Windows 10 (version 1903) command prompt opens Microsoft store? Deleting `%AppData%\Local\Microsoft\WindowsApps\` PATH from the system environment variable solved this issue. [source](https://superuser.com/a/1442909/1233932)
+
+## where is
+
+- 每天（默认有网络连接）更新的锁屏壁纸存放在哪里？`%AppData%\Local\Packages\Microsoft.Windows.ContentDeliveryManager_xxx\LocalState\Assets` 里
+- hosts 文件？`C:\WINDOWS\system32\drivers\etc` 下
 
 ## todo
 
