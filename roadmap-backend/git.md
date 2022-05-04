@@ -10,6 +10,13 @@
 
 Remote repositories are for backup and collaboration. (from the [comment](https://stackoverflow.com/questions/13321556/difference-between-git-and-github#comment18172627_13321586))
 
+(内网) `ping github.com` timed out? [解决办法](https://yuhongjun.github.io/tech/2020/09/30/%E8%A7%A3%E5%86%B3ping-github.com%E8%B6%85%E6%97%B6.html)
+
+1. 找一个在线的 dns lookup 网站，搜 `github.com`
+2. 将 ip 丢进 Windows 的 hosts 文件 `x.x.x.x github.com`
+3. 打开 cmd 运行 `ipconfig /flushdns`
+4. 好辣
+
 ## commands
 
 local docs `${git-installation-directory}/mingw64/share/doc/git-doc/`
