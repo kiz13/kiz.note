@@ -76,6 +76,15 @@ clone a repository
 
 - `git push -d <remote_name> <branchname>`
 
+git push error
+
+- [Support for password authentication was removed. Please use a personal access token instead](https://stackoverflow.com/a/68781050) 在凭据管理器里修改一下信息，后面会提及
+- [Pushing to Git returning Error Code 403](https://stackoverflow.com/questions/7438313/pushing-to-git-returning-error-code-403-fatal-http-request-failed) Nitrodist said, "This is often encountered when you clone with the git read-only address (which is the default when you aren't logged in) instead of the read+write ssh address." 那就改一下 repo 地址 `https://github.com/you/xxx.git` -> `git@github.com/you/xxx.git`
+- Permission denied (publickey) error? [generate an ssh key and add it to your GitHub account](https://stackoverflow.com/a/2643584)
+  1. generate key `cd ~/.ssh && ssh-keygen`
+  2. copy the key `cat id_rsa.pub | clip`
+- ["ERROR: Permission to .git denied to user"](https://stackoverflow.com/questions/5335197/gits-famous-error-permission-to-git-denied-to-user) go to control panel => credential manager / 凭据管理器 => Windows Credentials => 找到有 github 的那行，删掉
+
 ### configuration
 
 [get start with first time setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
