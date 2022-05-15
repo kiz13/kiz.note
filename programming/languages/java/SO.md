@@ -59,6 +59,8 @@
 
 - Access restriction: The type 'BASE64Decoder' is not API? All sun.* and com.sun.* packages are private to a Java implementation. Any future release of Java may alter them, possibly in ways which may break application code that relies on them. [source](https://stackoverflow.com/a/44271082/11844003)
 
+- [why closing the resource](https://stackoverflow.com/questions/18002896/is-closing-the-resources-always-important) and [what if I'm not doing so](https://stackoverflow.com/questions/39619472/what-happens-if-i-dont-close-things-like-channels-streams-and-remote-connectio)
+
 ## classes
 
 - Is Java "pass-by-reference" or "pass-by-value"? [Java is always **pass-by-value**.](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)

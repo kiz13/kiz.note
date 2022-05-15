@@ -2,8 +2,6 @@
 
 [Never code for performance, always code for readability.](https://stackoverflow.com/a/1923866)
 
-[file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)
-
 [where to put constants variable](https://softwareengineering.stackexchange.com/questions/290006/good-practice-to-hold-constants-in-their-own-file)
 
 [switch case with or without braces](https://stackoverflow.com/a/633536/11844003) there is a penalty for maintainability in that you will likely have to put them in at a later date.
@@ -31,6 +29,20 @@
 [regex vs `String.contains`](https://stackoverflow.com/questions/2023792/regex-vs-contains-best-performance)
 
 [why is package-info.java useful?](https://stackoverflow.com/questions/22095487/why-is-package-info-java-useful)
+
+[java 9, switch your project to modules?](https://stackoverflow.com/questions/62950667/is-there-any-need-to-switch-to-modules-when-migrating-to-java-9-or-later)
+
+[double's precision, rounding, internal representation, etc.](https://stackoverflow.com/questions/21603243/how-does-double-intvalue-work)
+
+[List vs Set, performance and memory allocation comparison](https://stackoverflow.com/questions/10799417/performance-and-memory-allocation-comparison-between-list-and-set)
+
+## naming
+
+[file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)
+
+[interface-implementation-naming](https://stackoverflow.com/questions/2814805/java-interfaces-implementation-naming-convention)
+
+[interface naming](https://stackoverflow.com/questions/541912/interface-naming-in-java)
 
 ## helping links
 

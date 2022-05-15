@@ -23,6 +23,8 @@
 - [bdoughan](https://stackoverflow.com/users/383861/bdoughan) xml & json binding
 - [aschipfl](https://stackoverflow.com/users/5047996/aschipfl) batch-file
 - [Peter Lawrey](https://stackoverflow.com/users/57695/peter-lawrey)
+- [John Conde](https://stackexchange.com/users/91055/john-conde)
+- [Catija](https://meta.stackexchange.com/users/284336/catija)
 
 ## other people
 

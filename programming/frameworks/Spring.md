@@ -68,6 +68,12 @@ Where does the `@Transactional` annotation belong? [I think transactions belong 
 
 - [request with two forward slashes failed?](https://stackoverflow.com/questions/48453980/spring-5-0-3-requestrejectedexception-the-request-was-rejected-because-the-url)
 
+- [return file having outputstream?](https://stackoverflow.com/questions/27741283/return-file-from-spring-controller-having-outputstream) Just note, with the Byte-streams, you keep everything in-memory.
+  - get the `OutputStream` from the `HttpServletResponse` and write something to it
+  - return `ResponseEntity` with `InputStreamResource` (totally Spring)
+
+- to map the date formatted value (received from form) to the `java.time.LocalDate` entity field, you should add `@DateTimeFormat(pattern = "what")` to it. [source](https://stackoverflow.com/questions/43079923/localdate-in-form)
+
 ### jackson
 
 - [jackson ignore null field during serialization](https://stackoverflow.com/questions/11757487/how-to-tell-jackson-to-ignore-a-field-during-serialization-if-its-value-is-null) `mapper.setSerializationInclusion(Include.NON_NULL);`

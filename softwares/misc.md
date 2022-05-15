@@ -6,6 +6,8 @@ use of <kbd>Shift</kbd> + scroll wheel is common for horizontal scrolling
 
 [copying an url from browser's address bar gives encoded one?](https://stackoverflow.com/questions/18176661/copying-a-utf-8-url-from-browsers-address-bar-gives-only-the-ugly-encoded-one)
 
+VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` parameter: `visualvm --fontsize 15`. For a permanent change, add this parameter to the visualvm_default_options in `<visualvm_install>/etc/visualvm.conf`. [gitter source](https://gitter.im/VisualVM/Feedback?at=5feaf7612084ee4b787b9fde)
+
 ## Chrome
 
 (chrome) <kbd>Shift</kbd> + <kbd>Esc</kbd> opens task manager

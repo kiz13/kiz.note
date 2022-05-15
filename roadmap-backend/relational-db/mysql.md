@@ -101,6 +101,22 @@ add a comment to the table `alter table tbl comment = 'wo'`
 - `SELECT SUBSTRING_INDEX('www.mysql.com', '.', -2);` gives `'mysql.com'`
 - `SELECT SUBSTRING_INDEX('www.mysql.com', '.', 2);` gives `'www.mysql'`
 
+[table comments length limit?](https://stackoverflow.com/questions/3571254/mysql-error-1628-comment-for-table-customer-is-too-long-max-60/14502814#14502814) 60? 255? or more? It depends on the version you are using.
+
+[Ref](https://stackoverflow.com/a/48345961) Non-breaking space is often encoded as C2A0 (in hex), to find it, try
+
+```sql
+SELECT
+  test.*
+from
+  (select
+     og,
+     replace(og, unhex('C2A0'), ' shit-marks ') temp
+   from test) test
+where
+  test.temp like '%shit-marks%';
+```
+
 ## data type
 
 [difference between utf8mb4 and utf8?](https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql)
@@ -132,6 +148,8 @@ speed issues - select on tables containing blob? [Many people recommend using bl
 Operand should contain 1 column error? [In my case, the problem was that I surrounded my columns' selection with parenthesis by mistake](https://stackoverflow.com/a/63780290/11844003)
 
 unique constraint - [`NULL` values can be repeated in a unique index.](https://stackoverflow.com/questions/18293543/can-i-conditionally-enforce-a-uniqueness-constraint)
+
+both `2022/1/2` and `2022-01-02` is valid to be inserted to a date type column, because [MySQL permits a “relaxed” format for values specified as strings, in which any punctuation character may be used as the delimiter between date parts or time parts.](http://dev.mysql.com/doc/refman/5.0/en/datetime.html)
 
 ## elder
 

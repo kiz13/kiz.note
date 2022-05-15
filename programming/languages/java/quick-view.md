@@ -1,5 +1,7 @@
 # *
 
+[java reserved words](https://en.wikipedia.org/wiki/List_of_Java_keywords)
+
 ## fundamental
 
 - _Autoboxing_ is the automatic conversion that the Java compiler makes between the primitive types and their corresponding object wrapper classes.

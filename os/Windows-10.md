@@ -87,6 +87,10 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 
 [how to open a file for editing in administrator mode?](https://superuser.com/questions/219179/how-to-open-a-file-for-editing-in-administrator-mode)
 
+给没有 Microsoft Store 的电脑安装 TranslucentTB? filehorse [.exe build](https://www.filehorse.com/download-translucenttb/)
+
+fix DNS_PROBE_FINISHED_NXDOMAIN error? 某天在访问内网页面时出现了这个错误，我的情况是之前配置过的 dns 导致的（设置 | 更改适配器选项 | 某个网络属性 | TCP/IPv4 属性 | DNS Server）设置为原来的自动获得 DNS 服务器地址就好了（之前去改这个这个 dns 设置是因为登录微软 Office 账号的时候出现了错误，后来才发现是挂着代理的缘故） [MS forum 上 JinsonKV 的回答](https://answers.microsoft.com/en-us/windows/forum/all/error-dnsprobefinishednxdomain-when-opening-the/4b98a419-80d7-497f-b551-d4283c5978c7)
+
 ## why
 
 错误信息：`C:\Program` 不是不是内部或外部命令 也不是可运行的程序？这是因为 Java 安装在了 `C:\Program Files\` 下 导致最终的 PATH 变量中包含了空格
@@ -137,6 +141,7 @@ Typing `python` on Windows 10 (version 1903) command prompt opens Microsoft stor
 
 - 每天（默认有网络连接）更新的锁屏壁纸存放在哪里？`%AppData%\Local\Packages\Microsoft.Windows.ContentDeliveryManager_xxx\LocalState\Assets` 里
 - hosts 文件？`C:\WINDOWS\system32\drivers\etc` 下
+- vimrc or vim profile for git's mingw32 shell? `vim --version | grep vimrc` [source](https://stackoverflow.com/a/15651421)
 
 ## todo
 

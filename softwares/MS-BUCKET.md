@@ -30,7 +30,7 @@ jetbrains [setup wsl development env](https://www.jetbrains.com/help/idea/how-to
 
 ## Windows Terminal
 
-- [ ] [Windows terminal caret thickness](https://github.com/microsoft/terminal/issues/4335)
+[Windows terminal caret thickness](https://github.com/microsoft/terminal/issues/4335)
 
 [Powershell Profiles配置文件的存放位置介绍](https://www.cnblogs.com/backpacker/p/4711823.html)
 
@@ -49,6 +49,8 @@ git bash icon file location: `${git-installation-directory}/mingw64/share/git/gi
 this [pull request (merged)](https://github.com/microsoft/terminal/pull/1005) allows you to write comments in the configuration file which is of json format.
 
 remove the powershell start text? [Add the `-nologo` option to the PowerShell command line](https://stackoverflow.com/a/63695674/11844003), then it starts the PowerShell console without displaying the copyright banner.
+
+use `wt` command to start Windows Terminal from the command line, `wt -d .` use the current directory as the starting directory for the console. [check also the official manuals](https://docs.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows)
 
 ### remote
 

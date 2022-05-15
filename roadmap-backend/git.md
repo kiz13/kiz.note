@@ -142,5 +142,6 @@ git push error
 - [A collection of useful `.gitattributes` templates](https://github.com/alexkaratarakis/gitattributes)
 - [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 - [bitbucket - no foxtrot merge](https://bitbucket.org/blog/no-foxtrot-merges-allowed)
+- [GitHub Star History](https://star-history.com/)
 
 ## end

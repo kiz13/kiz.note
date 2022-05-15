@@ -2,6 +2,8 @@
 
 A [JDBC driver](https://en.wikipedia.org/wiki/JDBC_driver) is a software component enabling a Java application to interact with a database.
 
+[yet naming](https://stackoverflow.com/questions/4702728/relational-table-naming-convention/4703155#4703155)
+
 ## misc
 
 - It is widely considered good style to qualify all column names in a join query, so that the query won't fail if a duplicate column name is later added to one of the tables.

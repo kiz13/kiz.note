@@ -12,6 +12,8 @@
 
 [The only rule you should obey is that a custom header should begin by `X-`](https://stackoverflow.com/a/37168084)
 
+max payload size? [no limit in the standard (RFC 2616), differs per implementation](https://stackoverflow.com/questions/1495541/rest-payload-max-size)
+
 ## http method
 
 知乎 - [我所在的公司规定所有接口都用 post 请求](https://www.zhihu.com/question/336797348)
@@ -19,6 +21,12 @@
 耗子 coolshell - [rest api post 一把梭](https://coolshell.cn/articles/22173.html)
 
 [POST with url query params, good idea or not?](https://stackoverflow.com/questions/611906/http-post-with-url-query-parameters-good-idea-or-not)
+
+DELETE multiple records?
+
+1. [Nicholas suggests not to do this](https://stackoverflow.com/a/21863914)
+2. [Decent suggests two-step-approaches](https://stackoverflow.com/a/2445682)
+3. [DELETE can potentially have the body ignored by the infra](http://stackoverflow.com/questions/299628/is-an-entity-body-allowed-for-an-http-delete-request)
 
 ## http response
 
