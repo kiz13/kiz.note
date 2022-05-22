@@ -36,6 +36,10 @@
 
 [List vs Set, performance and memory allocation comparison](https://stackoverflow.com/questions/10799417/performance-and-memory-allocation-comparison-between-list-and-set)
 
+[`if/else` or `switch`, which is better regarding performance?](https://stackoverflow.com/questions/2086529/what-is-the-relative-performance-difference-of-if-else-versus-switch-statement-i)
+
+[why is `printStackTrace` considered bad practice](https://stackoverflow.com/questions/7469316/why-is-exception-printstacktrace-considered-bad-practice)
+
 ## naming
 
 [file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)

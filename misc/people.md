@@ -25,6 +25,7 @@
 - [Peter Lawrey](https://stackoverflow.com/users/57695/peter-lawrey)
 - [John Conde](https://stackexchange.com/users/91055/john-conde)
 - [Catija](https://meta.stackexchange.com/users/284336/catija)
+- [Brian Tompsett - 汤莱恩](https://stackoverflow.com/users/4370109/brian-tompsett-%e6%b1%a4%e8%8e%b1%e6%81%a9)
 
 ## other people
 

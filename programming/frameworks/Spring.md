@@ -32,6 +32,8 @@ Where does the `@Transactional` annotation belong? [I think transactions belong 
 
 [setting custom properties in a spring-boot way](https://stackoverflow.com/a/32066380)
 
+[spring doc (swagger)](https://springdoc.org/properties.html)
+
 ## todo
 
 [configure logger](https://stackoverflow.com/questions/30571319/spring-boot-logging-pattern)

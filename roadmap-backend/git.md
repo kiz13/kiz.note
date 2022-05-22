@@ -62,7 +62,9 @@ clone a repository
 
 [git clone with ssl verify](https://stackoverflow.com/questions/11621768/how-can-i-make-git-accept-a-self-signed-certificate)
 
-[push changes to remote branch](https://stackoverflow.com/questions/36139275/git-pushing-to-remote-branch)
+[push another branch to remote branch](https://stackoverflow.com/questions/36139275/git-pushing-to-remote-branch)
+
+- `git push -u (--set-upstream) origin <branch_name>`
 
 [update a local repo with changes from a GitHub repo](https://stackoverflow.com/questions/1443210/updating-a-local-repository-with-changes-from-a-github-repository) `git pull origin master`
 
@@ -84,6 +86,14 @@ git push error
   1. generate key `cd ~/.ssh && ssh-keygen`
   2. copy the key `cat id_rsa.pub | clip`
 - ["ERROR: Permission to .git denied to user"](https://stackoverflow.com/questions/5335197/gits-famous-error-permission-to-git-denied-to-user) go to control panel => credential manager / 凭据管理器 => Windows Credentials => 找到有 github 的那行，删掉
+
+[fetch all remote git branches](https://stackoverflow.com/a/10313379/11844003)
+
+```shell
+git pull
+#
+git checkout -b localname origin/remote_branch_name
+```
 
 ### configuration
 
@@ -131,6 +141,10 @@ git push error
 [why edited hunk does not apply](https://stackoverflow.com/a/3268698/11844003)
 
 [tag?](https://stackoverflow.com/questions/1457103/how-is-a-tag-different-from-a-branch-in-git-which-should-i-use-here)
+
+directories not ignored? make sure they are not in the git index, and if they are, just `git rm -r --cached dir`
+
+git error: failed to push some refs to remote, [for me, I just needed to run "git commit"](https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote#comment71010883_24114760).
 
 ## helping links
 

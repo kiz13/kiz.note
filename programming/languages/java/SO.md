@@ -3,6 +3,7 @@
 ## table of contents
 
 - [why](#why)
+- [primitives](#primitives)
 - [classes](#classes)
 - [date and time](#date-and-time)
 - [generics](#generics)
@@ -61,6 +62,12 @@
 
 - [why closing the resource](https://stackoverflow.com/questions/18002896/is-closing-the-resources-always-important) and [what if I'm not doing so](https://stackoverflow.com/questions/39619472/what-happens-if-i-dont-close-things-like-channels-streams-and-remote-connectio)
 
+## primitives
+
+- [safely casting long to int](https://stackoverflow.com/questions/1590831/safely-casting-long-to-int-in-java) `Math.toIntExact` with Java 8; or manually check `l < Integer.MIN_VALUE || l > Integer.MAX_VALUE`
+
+- [round up integer division](https://stackoverflow.com/questions/7446710/how-to-round-up-integer-division-and-have-int-result-in-java) `(int) Math.ceil((double) divident / divisor)`
+
 ## classes
 
 - Is Java "pass-by-reference" or "pass-by-value"? [Java is always **pass-by-value**.](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
@@ -88,11 +95,17 @@
 
 ## date and time
 
+### java 8 time
+
 - [`java.time.LocalDate` and `java.util.Date` conversion](https://stackoverflow.com/questions/33066904/localdate-to-java-util-date-and-vice-versa-simplest-conversion)
 
 - [get the current date time](https://stackoverflow.com/questions/5175728/how-to-get-the-current-date-time-in-java)
 
 - [string to date conversion](https://stackoverflow.com/questions/4216745/java-string-to-date-conversion)
+
+- [format date time](https://stackoverflow.com/questions/23069370/format-a-date-using-the-new-date-time-api)
+
+- [sort date time](https://stackoverflow.com/questions/43679040/how-to-sort-date-in-java)
 
 ## generics
 
@@ -115,6 +128,8 @@
 - [dynamically add items to an array?](https://stackoverflow.com/questions/5061721/how-can-i-dynamically-add-items-to-a-java-array) use list or some array copy func
 
 - [convert a collection to an array?](https://stackoverflow.com/questions/9572795/convert-list-to-array-in-java)
+
+- [copy list](https://stackoverflow.com/questions/689370/how-to-copy-java-collections-list)
 
 ## lambdas
 

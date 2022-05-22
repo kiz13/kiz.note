@@ -6,6 +6,7 @@
 - `curl` [post file](https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files)
 - `grep` again [check](https://stackoverflow.com/questions/221921/use-grep-exclude-include-syntax-to-not-grep-through-certain-files)
 - `readlink -f filename.extension` [check](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file)
+- [ping doesn't stop?](https://askubuntu.com/questions/200989/ping-for-4-times) `alias ping="ping -c 4"`, with the `-c` option, it will stop after sending 4 ECHO_REQUEST packets, check the [man page](https://man7.org/linux/man-pages/man8/ping.8.html)
 
 ## ssh
 

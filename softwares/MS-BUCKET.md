@@ -52,6 +52,8 @@ remove the powershell start text? [Add the `-nologo` option to the PowerShell co
 
 use `wt` command to start Windows Terminal from the command line, `wt -d .` use the current directory as the starting directory for the console. [check also the official manuals](https://docs.microsoft.com/en-us/windows/terminal/command-line-arguments?tabs=windows)
 
+[about cursor blink](https://github.com/microsoft/terminal/issues/1379) you can do that globally at Control Panel | Keyboard
+
 ### remote
 
 [use ssh](https://stackoverflow.com/questions/57363597/how-to-use-a-new-windows-terminal-app-for-ssh) `ssh user@host`
