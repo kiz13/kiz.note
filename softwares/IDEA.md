@@ -52,6 +52,10 @@
 
 - [it stopped analyzing?](https://youtrack.jetbrains.com/issue/IDEA-247329) check the `idea.log` (Help | Collect Logs and Diagnostic Data)
 
+- [setting up environment variable](https://stackoverflow.com/a/13749192)
+
+- [is there a way to find the output of previous runs?](https://stackoverflow.com/questions/25178203/is-there-a-way-to-find-output-of-previous-runs-in-intellij) there is not, but
+
 ## frequently used keymap
 
 - <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd> paste from history

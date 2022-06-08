@@ -107,6 +107,8 @@
 
 - [sort date time](https://stackoverflow.com/questions/43679040/how-to-sort-date-in-java)
 
+- [get first and last day of month](https://stackoverflow.com/questions/22223786/get-first-and-last-day-of-month-using-threeten-localdate) `LocalDate#withDayOfMonth` or `java.time.temporal.TemporalAdjusters.firstDayOfMonth`
+
 ## generics
 
 - [is `List<Dog>` a subclass of `List<Animal>`?](https://stackoverflow.com/questions/2745265/is-listdog-a-subclass-of-listanimal-why-are-java-generics-not-implicitly-po) keyword: _covariant type_

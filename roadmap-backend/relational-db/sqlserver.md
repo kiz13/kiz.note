@@ -16,3 +16,16 @@ ORDER BY Id
 OFFSET 0 ROWS
 FETCH NEXT 10 ROWS ONLY;
 ```
+
+[use transactions](https://stackoverflow.com/questions/10153648/correct-use-of-transactions-in-sql-server)
+
+## jdbc
+
+[mssql and jtds](https://stackoverflow.com/questions/4393766/differences-between-ms-sql-microsofts-jdbc-drivers-and-jtdss-driver)
+
+SSL Error: "The server selected protocol version TLS10 is not accepted by client preferences [TLS12]"
+
+- use jTDS
+- use mssql-jdbc
+  - [repo issues 1803](https://github.com/microsoft/mssql-jdbc/issues/1803)
+  - check compatibility [ref1](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server-support-matrix?view=sql-server-ver15#sql-version-compatibility) and [ref2](https://support.microsoft.com/en-us/topic/kb3135244-tls-1-2-support-for-microsoft-sql-server-e4472ef8-90a9-13c1-e4d8-44aad198cdbe) then configure sqlserver [ref1](https://stackoverflow.com/questions/67261458/com-microsoft-sqlserver-jdbc-sqlserverexception-the-driver-could-not-establish), [ref2](https://stackoverflow.com/questions/68126780/how-to-fix-the-server-selected-protocol-version-tls10-is-not-accepted-by-client)

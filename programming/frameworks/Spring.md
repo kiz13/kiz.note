@@ -36,8 +36,6 @@ Where does the `@Transactional` annotation belong? [I think transactions belong 
 
 ## todo
 
-[configure logger](https://stackoverflow.com/questions/30571319/spring-boot-logging-pattern)
-
 [am I supports to use a service layer](https://stackoverflow.com/questions/9633498/do-i-really-need-a-service-layer) ya outa ur goddamn mind?
 
 [about dependency injection, he said](https://stackoverflow.com/questions/39890849/what-exactly-is-field-injection-and-how-to-avoid-it#comment67070350_39891473)
@@ -46,7 +44,21 @@ Where does the `@Transactional` annotation belong? [I think transactions belong 
 
 [aop choices](https://stackoverflow.com/questions/433475/performance-impact-of-using-aop)
 
+## application configuration
+
 `spring.profiles.active` A _profile_ is a mechanism to differentiate the configuration data consumed by the app. ...
+
+[configure hikaricp with jtds](https://stackoverflow.com/questions/42247864/configure-hikaricp-in-spring-boot-with-jtds)
+
+[multiple datasource with `jdbc-url`](https://stackoverflow.com/questions/49088847/after-spring-boot-2-0-migration-jdbcurl-is-required-with-driverclassname)
+
+### logging
+
+[configure logger](https://stackoverflow.com/questions/30571319/spring-boot-logging-pattern)
+
+default log location? [loggers are pre-configured to use console output](https://stackoverflow.com/a/31939886/11844003)
+
+[configure logging file](https://stackoverflow.com/questions/39158191/default-logging-file-for-spring-boot-application)
 
 ## rest controller
 
@@ -75,6 +87,8 @@ Where does the `@Transactional` annotation belong? [I think transactions belong 
   - return `ResponseEntity` with `InputStreamResource` (totally Spring)
 
 - to map the date formatted value (received from form) to the `java.time.LocalDate` entity field, you should add `@DateTimeFormat(pattern = "what")` to it. [source](https://stackoverflow.com/questions/43079923/localdate-in-form)
+
+- [use `LocalDateTime` as `RequestParam`?](https://stackoverflow.com/questions/40274353/how-to-use-localdatetime-requestparam-in-spring-i-get-failed-to-convert-string) add `@DateTimeFormat` to it
 
 ### jackson
 

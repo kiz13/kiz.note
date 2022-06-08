@@ -80,6 +80,8 @@ the `-server` option: Select the Java HotSpot Server VM. On a 64-bit capable jdk
 
 [Configuring the JVM, Java Options, and Database Cache](https://docs.oracle.com/cd/E37116_01/install.111210/e23737/configuring_jvm.htm#OUDIG00007)
 
+find `$JAVA_HOME` on *nix system, check [ref1](https://unix.stackexchange.com/questions/154955/how-to-find-where-is-java-home-set) and [ref2](https://unix.stackexchange.com/questions/21689/how-to-find-path-where-jdk-installed)
+
 ### ssl
 
 [import what](https://stackoverflow.com/a/22406950/11844003) `keytool -import -keystore ../jre/lib/security/cacerts -trustcacerts -alias "VeriSign Class 3 International Server CA - G3" -file /pathto/SVRIntlG3.cer`

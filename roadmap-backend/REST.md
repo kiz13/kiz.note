@@ -34,6 +34,8 @@ DELETE multiple records?
 
 [any standard for json api response format?](https://stackoverflow.com/questions/12806386/is-there-any-standard-for-json-api-response-format)
 
+[approach for long processing time](https://stackoverflow.com/questions/22322759/correct-api-approach-for-long-processing-time)
+
 ### status code
 
 [proper response code for a valid request but an empty data?](https://stackoverflow.com/questions/11746894/what-is-the-proper-rest-response-code-for-a-valid-request-but-an-empty-data)
@@ -51,6 +53,8 @@ Endpoint values which contain a leading `/` are absolute. Absolute values retain
 ### versioning
 
 [best practice, api versioning](https://stackoverflow.com/questions/389169/best-practices-for-api-versioning)
+
+[semver org](https://semver.org/)
 
 ## helping links
 

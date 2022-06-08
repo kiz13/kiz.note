@@ -4,6 +4,8 @@ use of <kbd>Shift</kbd> + scroll wheel is common for horizontal scrolling
 
 [obs 怎么用](https://www.zhihu.com/question/265231508/answer/588785627)
 
+[使用 JMeter](https://www.cnblogs.com/stulzq/p/8971531.html)
+
 [copying an url from browser's address bar gives encoded one?](https://stackoverflow.com/questions/18176661/copying-a-utf-8-url-from-browsers-address-bar-gives-only-the-ugly-encoded-one)
 
 VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` parameter: `visualvm --fontsize 15`. For a permanent change, add this parameter to the visualvm_default_options in `<visualvm_install>/etc/visualvm.conf`. [gitter source](https://gitter.im/VisualVM/Feedback?at=5feaf7612084ee4b787b9fde)

@@ -121,6 +121,12 @@ git checkout -b localname origin/remote_branch_name
 
 [type `q` to exit the out of `git log`](https://stackoverflow.com/questions/9483757/how-to-exit-git-log-or-git-diff)
 
+to view the change history of a file, use `git log --follow -p -- path/to/file`, [credit](https://stackoverflow.com/a/5493663/11844003)
+
+- `--follow` ensures that you see file renames
+- `-p` ensures that diffs are included for each change
+- `--` tells Git that it has reached the end of the options and that anything that follows `--` should be treated as an argument
+
 #### files
 
 [show all files under version control](https://stackoverflow.com/a/15606995) `git ls-tree -r master --name-only`
@@ -145,6 +151,8 @@ git checkout -b localname origin/remote_branch_name
 directories not ignored? make sure they are not in the git index, and if they are, just `git rm -r --cached dir`
 
 git error: failed to push some refs to remote, [for me, I just needed to run "git commit"](https://stackoverflow.com/questions/24114676/git-error-failed-to-push-some-refs-to-remote#comment71010883_24114760).
+
+[about `core.autocrlf`](https://stackoverflow.com/questions/2825428/why-should-i-use-core-autocrlf-true-in-git)
 
 ## helping links
 
