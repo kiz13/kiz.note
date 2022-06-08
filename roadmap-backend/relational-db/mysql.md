@@ -1,4 +1,16 @@
-# *
+# Mysql
+
+partitioning
+
+(linux) start mysql server `sudo service mysqld start` or [other ways](https://askubuntu.com/questions/82374/how-do-i-start-stop-mysql-server)
+
+table of contents
+
+- [dump](#dump)
+- [meta information](#meta-info)
+- [data type](#data-type)
+- [misc sql in action](#sql)
+- [old version (5.x) stuff](#elder)
 
 ## dump
 
@@ -6,7 +18,7 @@
 
 `mysqldump --no-tablespaces --column-statistics=0 -h x.x.x.x -u user_name -p database_name > dump.sql` [source, also check the comment that points out what's **-p**](https://stackoverflow.com/a/48810450/11844003)
 
-- `-p` is for the password argument - not the database name. But it's insecure to store it in plain text so adding `-p` means you will be prompted for the password at login [source](https://stackoverflow.com/questions/2989724/how-to-mysqldump-remote-db-from-local-machine#comment91984954_48810450)
+- `-p` is for the password argument, not the database name. But it's insecure to store it in plain text so adding `-p` means you will be prompted for the password at login [source](https://stackoverflow.com/questions/2989724/how-to-mysqldump-remote-db-from-local-machine#comment91984954_48810450)
 - the `column-statistics` option is enabled by default in mysqldump 8, disable it by setting to 0 [source](https://stackoverflow.com/questions/52423595/mysqldump-couldnt-execute-unknown-table-column-statistics-in-information-sc)
 - Access denied you need (at least one of) the PROCESS privilege(s) ... [how to](https://dba.stackexchange.com/questions/271981/access-denied-you-need-at-least-one-of-the-process-privileges-for-this-ope) use `--no-tablespaces` option
 - dump a set of table of one or more tables `mysqldump [options] db_name [tbl_1 tbl_2]` [source](https://stackoverflow.com/questions/18741287/mysqldump-exports-only-one-table)
@@ -14,7 +26,7 @@
 
 [(using powershell) why the dump sql file's encoding is utf16?](https://stackoverflow.com/questions/48465271/mysqldump-and-powershell-produces-utf-16) you need to add some options like `mysqldump blah blah | Out-File dump.sql -Encoding utf8`
 
-[skip tables when dumping (with a script demonstrating how)](https://stackoverflow.com/a/425172/11844003)
+[skip tables when dumping (with a script demonstrating how)](https://stackoverflow.com/a/425172/11844003) add one or multiple `--ignore-table=<database>.<table>` options
 
 [export structure without `autoincrement`?](https://stackoverflow.com/questions/15656463/mysqldump-export-structure-only-without-autoincrement) I choose to delete that part manually
 
@@ -29,11 +41,14 @@
 - `show status where variable_name = 'Threads_connected'`
 - `show processlist`
 
-[where does mysql store data?](https://stackoverflow.com/questions/26402884/where-does-mysql-store-data)
+[where does mysql store data?](https://stackoverflow.com/a/26403457) see also [this from mkyong](https://mkyong.com/mysql/where-does-mysql-stored-the-data-in-my-harddisk/)
+
+- (for Windows 10) Locate the `my.ini` under the `${Mysql-installation}/MySQL Server ver.sion` and search the `datadir` key inside. That installation dir maybe `Program Files` or `ProgramData` (on my machine, version 8.0)
+- or use `mysqld --verbose --help | grep datadir`
 
 [show database sorted by creation date](https://stackoverflow.com/questions/34236157/mysql-show-database-sorted-by-creation-date)
 
-  ```sql
+  ```mysql
   select TABLE_SCHEMA,
         max(CREATE_TIME) create_time,
         max(UPDATE_TIME) update_time
@@ -42,17 +57,18 @@
   order by create_time desc;
   ```
 
-[list all the reserved words](https://stackoverflow.com/questions/14624292/is-there-a-way-to-list-all-the-reserved-words-in-mysql-using-the-mysql-command-l)
+[show comment of fields ?](https://stackoverflow.com/questions/5404051/show-comment-of-fields-from-mysql-table)
+
+- `show full columns from <tablename>`
+- or query `information_schema.COLUMNS`
+
+[list all the reserved words (5.x)?](https://stackoverflow.com/questions/14624292/is-there-a-way-to-list-all-the-reserved-words-in-mysql-using-the-mysql-command-l)
 
 [allow remote access](https://stackoverflow.com/questions/50570592/mysql-8-remote-access)
 
-start mysql server `sudo service mysqld start` or [others](https://askubuntu.com/questions/82374/how-do-i-start-stop-mysql-server)
+create user with `create user 'xxx'@'localhost' identified by 'xxx'`
 
-log in `mysql -u root -p`
-
-create user `create user 'xxx'@'localhost' identified by 'xxx'`
-
-grant privilege `grant all privileges on db.* to xxx@localhost with grant option`
+grant privilege with `grant all privileges on db.* to xxx@localhost with grant option`
 
 [run sql script](https://stackoverflow.com/questions/8940230/how-to-run-sql-script-in-mysql)
 
@@ -63,6 +79,42 @@ retrieve the current version of mysql: `select version()`
 [what is `.log` suffix in the `version()` output](https://stackoverflow.com/questions/40331746/what-does-log-stand-for-in-mysql-version)
 
 [How to estimate/predict data size and index size of a table](https://dba.stackexchange.com/questions/46069/how-to-estimate-predict-data-size-and-index-size-of-a-table-in-mysql)
+
+## data type
+
+[difference between utf8mb4 and utf8?](https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql)
+
+[difference between bool and boolean?](https://stackoverflow.com/questions/4753963/whats-the-difference-between-mysql-bool-and-boolean-column-data-types) they are both synonyms for `tinyint(1)`
+
+- `0` means `false`
+- `1` means `true`
+
+[base64 vs blob](https://stackoverflow.com/questions/29284266/mysql-base64-vs-blob)
+
+[implicit conversion when compare string and number columns](https://stackoverflow.com/questions/64794779/is-it-a-problem-to-compare-a-string-to-an-int-column-in-mysql)
+
+cast lob column: `cast (lob_field as char(length) character set utf8)`
+
+blob size:
+
+  ```text
+  TINYBLOB    Up to 255 bytes  1 byte
+  BLOB        Up to 64 Kb      2 bytes
+  MEDIUMBLOB  Up to 16 Mb      3 bytes
+  LONGBLOB    Up to 4 Gb       1 Bytes
+  ```
+
+[format date from millisecond](https://stackoverflow.com/questions/18176088/mysql-select-formatted-date-from-millisecond-field)
+
+speed issues - select on tables containing blob? [Many people recommend using blob with only one primary key in a separate table and storing the blob metadata in another table with a foreign key to the blob table.](https://stackoverflow.com/a/13421726/11844003)
+
+Operand should contain 1 column error? [In my case, the problem was that I surrounded my columns' selection with parenthesis by mistake](https://stackoverflow.com/a/63780290/11844003)
+
+unique constraint - [`NULL` values can be repeated in a unique index.](https://stackoverflow.com/questions/18293543/can-i-conditionally-enforce-a-uniqueness-constraint)
+
+both `2022/1/2` and `2022-01-02` is valid to be inserted to a date type column, because [MySQL permits a “relaxed” format for values specified as strings, in which any punctuation character may be used as the delimiter between date parts or time parts.](http://dev.mysql.com/doc/refman/5.0/en/datetime.html)
+
+[what is the biggest id number that autoincrement can produce?](https://stackoverflow.com/questions/10707072/what-is-the-biggest-id-number-that-autoincrement-can-produce-in-mysql)
 
 ## sql
 
@@ -117,39 +169,17 @@ where
   test.temp like '%shit-marks%';
 ```
 
-## data type
+Unknown command `'\''` error when do imp? [You have binary blobs in your DB, try adding `--hex-blob` to your mysqldump statement.](https://stackoverflow.com/a/5915062/11844003)
 
-[difference between utf8mb4 and utf8?](https://stackoverflow.com/questions/30074492/what-is-the-difference-between-utf8mb4-and-utf8-charsets-in-mysql)
+UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/a/1262848) and [ref2](https://www.cnblogs.com/duanxz/p/5099030.html)
 
-[difference between bool and boolean?](https://stackoverflow.com/questions/4753963/whats-the-difference-between-mysql-bool-and-boolean-column-data-types) they are both synonyms for `tinyint(1)`
+[conditionally enforce a uniqueness constraint](https://stackoverflow.com/a/18293770/11844003)
 
-- `0` means `false`
-- `1` means `true`
-
-[base64 vs blob](https://stackoverflow.com/questions/29284266/mysql-base64-vs-blob)
-
-[implicit conversion when compare string and number columns](https://stackoverflow.com/questions/64794779/is-it-a-problem-to-compare-a-string-to-an-int-column-in-mysql)
-
-cast lob column: `cast (lob_field as char(length) character set utf8)`
-
-blob size:
-
-  ```text
-  TINYBLOB    Up to 255 bytes  1 byte
-  BLOB        Up to 64 Kb      2 bytes
-  MEDIUMBLOB  Up to 16 Mb      3 bytes
-  LONGBLOB    Up to 4 Gb       1 Bytes
-  ```
-
-[format date from millisecond](https://stackoverflow.com/questions/18176088/mysql-select-formatted-date-from-millisecond-field)
-
-speed issues - select on tables containing blob? [Many people recommend using blob with only one primary key in a separate table and storing the blob metadata in another table with a foreign key to the blob table.](https://stackoverflow.com/a/13421726/11844003)
-
-Operand should contain 1 column error? [In my case, the problem was that I surrounded my columns' selection with parenthesis by mistake](https://stackoverflow.com/a/63780290/11844003)
-
-unique constraint - [`NULL` values can be repeated in a unique index.](https://stackoverflow.com/questions/18293543/can-i-conditionally-enforce-a-uniqueness-constraint)
-
-both `2022/1/2` and `2022-01-02` is valid to be inserted to a date type column, because [MySQL permits a “relaxed” format for values specified as strings, in which any punctuation character may be used as the delimiter between date parts or time parts.](http://dev.mysql.com/doc/refman/5.0/en/datetime.html)
+> Add another column called something like `isactive`. Then create a unique constraint on `(username, isactive)`.
+>
+> Then you can have both an active and inactive user name at the same time. You will not be able to have two active user names.
+>
+> If you want multiple inactive names, use `NULL` for the value of `isactive`. `NULL` values can be repeated in a unique index.
 
 ## elder
 
