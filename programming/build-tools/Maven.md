@@ -156,3 +156,14 @@ allprojects {
 [maven not resolve the source JARs? do it manually:](https://stackoverflow.com/questions/2059431/get-source-jars-from-maven-repository) `mvn dependency:sources` (for all artifacts)
 
 [skip tests when packaging](https://stackoverflow.com/questions/7456006/maven-package-install-without-test-skip-tests) use option `-DskipTests`
+
+[how to include local lib directory?](https://stackoverflow.com/a/54146663/11844003)
+  ```xml
+  <dependency>
+      <groupId>anything</groupId>
+      <artifactId>anything</artifactId>
+      <version>anything</version>
+      <scope>system</scope>
+      <systemPath>${basedir}/lib/jar-name.jar</systemPath>
+  </dependency>
+  ```

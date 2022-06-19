@@ -120,6 +120,8 @@ default log location? [loggers are pre-configured to use console output](https:/
 
 - [v2ex Hikari 连接池，连接超时被关闭](https://www.v2ex.com/t/688926#r_9231887)
 
+- [can I do validation using Spring Data JDBC?](https://stackoverflow.com/a/62403357/11844003) Spring Data JDBC does no validation. (p.s. Validation should happen in the constructor so that it is not possible to create an invalid object in the first place.)
+
 ## old world
 
 - [war file: could not find or load main class?](https://stackoverflow.com/a/51841838/11844003) try packaging the WAR with maven plugin

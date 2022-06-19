@@ -18,7 +18,9 @@ max payload size? [no limit in the standard (RFC 2616), differs per implementati
 
 知乎 - [我所在的公司规定所有接口都用 post 请求](https://www.zhihu.com/question/336797348)
 
-耗子 coolshell - [rest api post 一把梭](https://coolshell.cn/articles/22173.html)
+耗子 coolshell
+- [rest api post 一把梭](https://coolshell.cn/articles/22173.html)
+- [幂等性概念和应用](https://coolshell.cn/articles/4787.html)
 
 [POST with url query params, good idea or not?](https://stackoverflow.com/questions/611906/http-post-with-url-query-parameters-good-idea-or-not)
 
