@@ -1,5 +1,7 @@
 # *
 
+[is oracle free to download?](https://dba.stackexchange.com/a/50163) If you're really only looking to learn about the development side and have no interest in the administration or installation side at the moment, a quicker route might be to download a [prebuilt developer VM image for Virtualbox](http://www.oracle.com/technetwork/community/developer-vm/index.html).
+
 context: **11g** Windows 10
 
 [jdbc data source and url](https://docs.oracle.com/database/121/JJDBC/urls.htm#BEIDHCBA)
@@ -369,6 +371,17 @@ implicit number and character conversion
   - `to_char(number, 999990.00)`
   - `to_char(number, fm999999.00)`
   - `https://docs.oracle.com/cd/E11882_01/server.112/e41084/sql_elements004.htm#SQLRF00212`
+- [add column and comment in one line?](https://stackoverflow.com/a/10516640/11844003) the `comment on` syntax is the only way of adding comments. SQL Server, PostgreSQL and DB2 use the same syntax
+- [By default, Oracle identifiers (table names, column names, etc.) are case-insensitive. You can make them case-sensitive by using quotes around them](https://stackoverflow.com/a/7425931/11844003)
+- [ORA-00054: resource busy?](https://stackoverflow.com/questions/4842765/ora-00054-resource-busy-and-acquire-with-nowait-specified-or-timeout-expired) Your table is already locked by some query (maybe in another session, like sql developer) which have not yet committed/rollbacked
+- [find out if there is a transaction pending?](https://stackoverflow.com/questions/1299694/oracle-how-to-find-out-if-there-is-a-transaction-pending)
+  ```sql
+  SELECT COUNT(*)
+       FROM v$transaction t, v$session s, v$mystat m
+      WHERE t.ses_addr = s.saddr
+        AND s.sid = m.sid
+        AND ROWNUM = 1;
+  ```
 
 ## data type
 
@@ -411,6 +424,11 @@ If you specify a negative scale, Oracle Database rounds the actual data to the s
 ### LOB
 
 The LOB datatypes `BLOB`, `CLOB`, `NCLOB`, and `BFILE` enable you to store and manipulate large blocks of unstructured data (such as text, graphic images, video clips, and sound waveforms) in binary or character format.
+
+### date/time
+
+- [timezone issues 1](https://stackoverflow.com/questions/68185028/why-are-oracle-time-zones-wrong)
+- [timezone issues 2](https://stackoverflow.com/questions/65291105/java-and-oracle-timestamp-with-time-zone)
 
 ## database link
 

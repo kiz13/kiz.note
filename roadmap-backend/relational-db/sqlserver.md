@@ -29,3 +29,29 @@ SSL Error: "The server selected protocol version TLS10 is not accepted by client
 - use mssql-jdbc
   - [repo issues 1803](https://github.com/microsoft/mssql-jdbc/issues/1803)
   - check compatibility [ref1](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server-support-matrix?view=sql-server-ver15#sql-version-compatibility) and [ref2](https://support.microsoft.com/en-us/topic/kb3135244-tls-1-2-support-for-microsoft-sql-server-e4472ef8-90a9-13c1-e4d8-44aad198cdbe) then configure sqlserver [ref1](https://stackoverflow.com/questions/67261458/com-microsoft-sqlserver-jdbc-sqlserverexception-the-driver-could-not-establish), [ref2](https://stackoverflow.com/questions/68126780/how-to-fix-the-server-selected-protocol-version-tls10-is-not-accepted-by-client)
+
+## linked server
+
+[steps to create linked mysql server](https://www.mssqltips.com/sqlservertip/4570/access-mysql-data-from-sql-server-via-a-linked-server/)
+1. install ODBC
+2. in SSMS, click **New Linked Server**
+3. enter the provider string (e.g., `Driver={MySQL ODBC 8.0 ANSI Driver};DATABASE=dbname;OPTION=134217728;password=p@sswo0d;UID=uname;SERVER=localhost`) and other necessary inputs
+
+[create linked server using t-sql](https://database.guide/create-a-linked-server-in-sql-server-t-sql-example/)
+1. install ODBC
+2. ```tsql
+     /* example */
+     EXEC sp_addlinkedserver @server = N'link_name'
+     ,@srvproduct=N'MySQL'
+     ,@provider=N'MSOLEDBSQL'
+     ,@provstr=N'Driver={MySQL ODBC 8.0 ANSI Driver};DATABASE=dbname;OPTION=134217728;password=p@sswo0d;UID=uname;SERVER=localhost'
+     GO
+     ```
+
+[linked server, **Access denied**?](https://dba.stackexchange.com/a/269918) `password` or `pwd`, choose the one that works（不深入研究了
+
+test it with: `exec sp_testlinkedserver link_name;`
+
+query with: `select * from openquery(link_name, query_str);`
+
+drop it with: `exec sp_dropserver link_name go`

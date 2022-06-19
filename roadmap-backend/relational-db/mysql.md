@@ -10,6 +10,7 @@ table of contents
 - [meta information](#meta-info)
 - [data type](#data-type)
 - [misc sql in action](#sql)
+- [indexing](#indexing)
 - [old version (5.x) stuff](#elder)
 
 ## dump
@@ -116,6 +117,8 @@ both `2022/1/2` and `2022-01-02` is valid to be inserted to a date type column, 
 
 [what is the biggest id number that autoincrement can produce?](https://stackoverflow.com/questions/10707072/what-is-the-biggest-id-number-that-autoincrement-can-produce-in-mysql)
 
+[impact of different length of varchar fields?](https://stackoverflow.com/a/1962329/11844003) temporary tables and MEMORY tables store a VARCHAR column as a fixed-length column. So it'll consume more memory than you have to, which affects cache efficiency, sorting speed, etc. [see also](https://dba.stackexchange.com/questions/76469/mysql-varchar-length-and-performance)
+
 ## sql
 
 [change a `not null` column to a `null` column?](https://stackoverflow.com/questions/2607775/how-can-a-not-null-constraint-be-dropped) `alter table which_one modify column which_c int null;`
@@ -181,6 +184,12 @@ UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/
 >
 > If you want multiple inactive names, use `NULL` for the value of `isactive`. `NULL` values can be repeated in a unique index.
 
+## indexing
+
+[two column index?](https://stackoverflow.com/a/2349824/11844003) A two column index can also be used as a single column index, but only for the column listed first. Sometimes it can be useful to have an index on `(A,B)` and another index on `(B)`
+
+[best practice?](https://stackoverflow.com/a/3049383/11844003) So, in general, indexing creates a tradeoff between read efficiency and write efficiency. With no indexes, inserts can be very fast -- the database engine just adds a row to the table. As you add indexes, the engine must update each index while performing the insert. see also [why don't just index everything](https://stackoverflow.com/questions/6358641/indexes-why-dont-just-index-everything-and-when-to-use-indexes)
+
 ## elder
 
 [invalid default value for timestamp field?](https://stackoverflow.com/questions/9192027/invalid-default-value-for-create-date-timestamp-field)
@@ -196,3 +205,7 @@ UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/
 [current date as default not working for 5.x](https://stackoverflow.com/a/20461045/11844003) the default value must be a constant; it cannot be a function or an expression. The exception is that you can specify `CURRENT_TIMESTAMP` as the default for a `TIMESTAMP` column.
 
 [is there a clause like `drop column if exists`?](https://stackoverflow.com/questions/173814/using-alter-to-drop-a-column-if-it-exists-in-mysql) no? yes?
+
+## ref
+
+he uses this [naming conventions](https://launchbylunch.com/posts/2014/Feb/16/sql-naming-conventions/#naming-conventions)
