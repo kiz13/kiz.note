@@ -40,6 +40,8 @@
 
 [why is `printStackTrace` considered bad practice](https://stackoverflow.com/questions/7469316/why-is-exception-printstacktrace-considered-bad-practice)
 
+[time based map/cache with expiring keys](https://stackoverflow.com/questions/3802370/java-time-based-map-cache-with-expiring-keys)
+
 ## naming
 
 [file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)

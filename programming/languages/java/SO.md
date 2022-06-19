@@ -68,6 +68,8 @@
 
 - [round up integer division](https://stackoverflow.com/questions/7446710/how-to-round-up-integer-division-and-have-int-result-in-java) `(int) Math.ceil((double) divident / divisor)`
 
+- Cleanest way to toggle a boolean variable? use _bitwise XOR_ `theBoolean ^= true;` [Fewer keystrokes if your variable is longer than four letters](https://stackoverflow.com/a/224380/11844003)
+
 ## classes
 
 - Is Java "pass-by-reference" or "pass-by-value"? [Java is always **pass-by-value**.](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value)
