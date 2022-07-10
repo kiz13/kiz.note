@@ -91,6 +91,10 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 
 fix DNS_PROBE_FINISHED_NXDOMAIN error? 某天在访问内网页面时出现了这个错误，我的情况是之前配置过的 dns 导致的（设置 | 更改适配器选项 | 某个网络属性 | TCP/IPv4 属性 | DNS Server）设置为原来的自动获得 DNS 服务器地址就好了（之前去改这个这个 dns 设置是因为登录微软 Office 账号的时候出现了错误，后来才发现是挂着代理的缘故） [MS forum 上 JinsonKV 的回答](https://answers.microsoft.com/en-us/windows/forum/all/error-dnsprobefinishednxdomain-when-opening-the/4b98a419-80d7-497f-b551-d4283c5978c7)
 
+[How to check if a binary is 32 or 64 bit?](https://superuser.com/questions/358434/how-to-check-if-a-binary-is-32-or-64-bit-on-windows)
+- use `sigcheck.exe` from [SysInternals](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck): `sigcheck.exe C:\Windows\xxx.dll`, then check `MachineType` (answers by briantist)
+- use `file` utility from cgywin or git: `file xxx.exe`, PE32 for 32 bit, PE32+ for 64 bit (answers by wmassingham)
+
 ## why
 
 错误信息：`C:\Program` 不是不是内部或外部命令 也不是可运行的程序？这是因为 Java 安装在了 `C:\Program Files\` 下 导致最终的 PATH 变量中包含了空格

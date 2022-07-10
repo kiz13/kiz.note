@@ -5,7 +5,11 @@
 - [配置 sqlserver auth 后重启](https://blog.csdn.net/qq_39217004/article/details/105164041)
 - [18456 error when login to MSSQL?](https://stackoverflow.com/questions/20923015/login-to-microsoft-sql-server-error-18456) in the SSMS, go Properties > Security > Server authentication, choose _SQL Server and Windows Authentication mode_. Then restart the SQL Service. [check also](https://docs.microsoft.com/en-us/sql/database-engine/configure-windows/change-server-authentication-mode?view=sql-server-ver15)
 
-## run query
+## data type
+
+[meaning of the prefix N?](https://stackoverflow.com/questions/10025032/what-is-the-meaning-of-the-prefix-n-in-t-sql-statements-and-when-should-i-use-it) It denotes that the subsequent string is in Unicode \(the N actually stands for National language character set\). Which means that you are passing an `NCHAR`, `NVARCHAR` or `NTEXT` value, as opposed to `CHAR`, `VARCHAR` or `TEXT`.
+
+## run sql
 
 [pagination](https://stackoverflow.com/questions/2135418/equivalent-of-limit-and-offset-for-sql-server)
 
@@ -19,6 +23,11 @@ FETCH NEXT 10 ROWS ONLY;
 
 [use transactions](https://stackoverflow.com/questions/10153648/correct-use-of-transactions-in-sql-server)
 
+play with `varbinary`
+- how to create column for storing large binary data? [`varbinary(max)`](https://stackoverflow.com/a/8240903/11844003)
+- how to insert string into a varbinary column? [SQL Server requires an explicit conversion from varchar to varbinary](https://stackoverflow.com/a/3275585/11844003), then use `cast('text' as varbinary)` / `convert(varbinary, 'text')`
+- [how to set limit of a varbinary column?](https://stackoverflow.com/questions/34741079/can-i-set-2-mb-for-maximum-size-of-varbinary) use `CONSTRAINT`: `alter ... add constraint xxx check (datalength(col) <= :limit)`
+
 ## jdbc
 
 [mssql and jtds](https://stackoverflow.com/questions/4393766/differences-between-ms-sql-microsofts-jdbc-drivers-and-jtdss-driver)
@@ -29,6 +38,8 @@ SSL Error: "The server selected protocol version TLS10 is not accepted by client
 - use mssql-jdbc
   - [repo issues 1803](https://github.com/microsoft/mssql-jdbc/issues/1803)
   - check compatibility [ref1](https://docs.microsoft.com/en-us/sql/connect/jdbc/microsoft-jdbc-driver-for-sql-server-support-matrix?view=sql-server-ver15#sql-version-compatibility) and [ref2](https://support.microsoft.com/en-us/topic/kb3135244-tls-1-2-support-for-microsoft-sql-server-e4472ef8-90a9-13c1-e4d8-44aad198cdbe) then configure sqlserver [ref1](https://stackoverflow.com/questions/67261458/com-microsoft-sqlserver-jdbc-sqlserverexception-the-driver-could-not-establish), [ref2](https://stackoverflow.com/questions/68126780/how-to-fix-the-server-selected-protocol-version-tls10-is-not-accepted-by-client)
+
+insert string as `nvarchar`? [`PreparedStatement.setNString()`](https://stackoverflow.com/questions/38654672/sql-server-nvarchar-and-java-prepared-statement#comment64692422_38654672)
 
 ## linked server
 

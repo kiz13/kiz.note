@@ -66,8 +66,6 @@
 
 - [safely casting long to int](https://stackoverflow.com/questions/1590831/safely-casting-long-to-int-in-java) `Math.toIntExact` with Java 8; or manually check `l < Integer.MIN_VALUE || l > Integer.MAX_VALUE`
 
-- [round up integer division](https://stackoverflow.com/questions/7446710/how-to-round-up-integer-division-and-have-int-result-in-java) `(int) Math.ceil((double) divident / divisor)`
-
 - Cleanest way to toggle a boolean variable? use _bitwise XOR_ `theBoolean ^= true;` [Fewer keystrokes if your variable is longer than four letters](https://stackoverflow.com/a/224380/11844003)
 
 ## classes

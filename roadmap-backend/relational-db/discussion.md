@@ -36,6 +36,8 @@ A [JDBC driver](https://en.wikipedia.org/wiki/JDBC_driver) is a software compone
 
 - [differences between `truncate` and `delete`](https://stackoverflow.com/questions/139630/whats-the-difference-between-truncate-and-delete-in-sql)
 
+- jdbc, [writing sql w/o prepared statement](https://stackoverflow.com/questions/47272504/getting-rid-of-sql-injection-without-using-prepared-statement)? insecure
+
 ## relation?
 
 [Entity-attribute-value model](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)

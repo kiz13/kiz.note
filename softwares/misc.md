@@ -4,11 +4,15 @@ use of <kbd>Shift</kbd> + scroll wheel is common for horizontal scrolling
 
 [obs 怎么用](https://www.zhihu.com/question/265231508/answer/588785627)
 
-[使用 JMeter](https://www.cnblogs.com/stulzq/p/8971531.html)
-
 [copying an url from browser's address bar gives encoded one?](https://stackoverflow.com/questions/18176661/copying-a-utf-8-url-from-browsers-address-bar-gives-only-the-ugly-encoded-one)
 
 VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` parameter: `visualvm --fontsize 15`. For a permanent change, add this parameter to the visualvm_default_options in `<visualvm_install>/etc/visualvm.conf`. [gitter source](https://gitter.im/VisualVM/Feedback?at=5feaf7612084ee4b787b9fde)
+
+## JMeter
+
+使用 JMeter [ref1](https://www.cnblogs.com/stulzq/p/8971531.html) and [ref2](https://www.cnblogs.com/dinghanhua/p/5646435.html)
+
+send increment value on each request? [ref1](https://stackoverflow.com/questions/52000899/jmeter-increment-value-before-each-sampler-request) and [ref2](https://sqa.stackexchange.com/questions/49189/how-to-increment-value-of-json-variable-in-jmeter)
 
 ## Chrome
 
@@ -17,6 +21,8 @@ VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` 
 chrome not opening any pages? Maybe some extension cause it, uninstall 'em to check.
 
 [gee, view raw pdf using google docs](https://webapps.stackexchange.com/a/78367)
+
+[cors error, the request client is not a secure context](https://stackoverflow.com/questions/66534759/chrome-cors-error-on-request-to-localhost-dev-server-from-remote-site)
 
 ## Ditto
 
@@ -51,16 +57,6 @@ chrome not opening any pages? Maybe some extension cause it, uninstall 'em to ch
 [post image?](https://stackoverflow.com/questions/39660074/post-image-data-using-postman)
 
 [import cURL?](https://stackoverflow.com/questions/27957943/simulate-a-specific-curl-in-postman) click Import on the upper left side | switch to Raw text tab | paste cURL | go
-
-## Reddit
-
-**bookmarks**
-
-- [un-upvote old posts?](https://www.reddit.com/r/help/comments/2hym5x/how_to_unupvote_old_posts/) After 6 months posts/comments are archived, and it saves the vote scores. So you can't change your vote.
-
-## SoundCloud
-
-[you can only stream music or audio on one device at a time, If you are playing a track on one device, and try to play a track on another device that you are signed into, your first device will stop playing](https://help.soundcloud.com/hc/en-us/articles/115003563808-Listening-on-multiple-devices)
 
 ## Spotify
 

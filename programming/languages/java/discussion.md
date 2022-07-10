@@ -42,6 +42,10 @@
 
 [time based map/cache with expiring keys](https://stackoverflow.com/questions/3802370/java-time-based-map-cache-with-expiring-keys)
 
+[`synchronized` block vs `java.util.concurrent.Lock`](https://stackoverflow.com/questions/4201713/synchronization-vs-lock)
+
+[logging best practice?](https://stackoverflow.com/questions/906233/logging-in-java-and-in-general-best-practices)
+
 ## naming
 
 [file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)

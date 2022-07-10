@@ -34,6 +34,7 @@
 - [modify a file inside a jar](https://stackoverflow.com/questions/1224817/modifying-a-file-inside-a-jar) use `jar uf jar-file new-files`
 - [Can't execute jar: "no main manifest attribute"](https://stackoverflow.com/questions/9689793/cant-execute-jar-file-no-main-manifest-attribute) to make a jar executable, you need to jar a file called META-INF/MANIFEST.MF
 - [why do jvm arguments start with `-D`](https://stackoverflow.com/questions/44745261/why-do-jvm-arguments-start-with-d)
+- [unmappable character for encoding utf8](https://stackoverflow.com/questions/4995057/unmappable-character-for-encoding-utf-8-error)
 
 ---
 

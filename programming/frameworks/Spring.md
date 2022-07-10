@@ -20,37 +20,49 @@ A [preamble](https://www.vocabulary.com/dictionary/preamble) is a brief introduc
 - `MappingJackson2HttpMessageConverter`
 - `@ResponseBody` automatically handles the serialization of data passed into the service as JSON(default)
 
----
+## discussions
 
-@Autowired HttpServletRequest vs passing as parameter? [both are ok](https://stackoverflow.com/a/48575275/11844003) Spring stores the `HttpServletRequest` into a `ThreadLocal` type variable, which is a thread-safe map that keeps `HttpServletRequest` in the current thread context.
+@Autowired HttpServletRequest vs passing as parameter?
 
-validation in controller or service? [In the service.](https://stackoverflow.com/a/46480007/11844003) Controllers should be light-weight and pass on requests.
+> [Both are ok](https://stackoverflow.com/a/48575275/11844003) Spring stores the `HttpServletRequest` into a `ThreadLocal` type variable, which is a thread-safe map that keeps `HttpServletRequest` in the current thread context.
 
-return `ResponseEntity` vs return pojo [Returning just a bean is fine but doesn't give you much flexibility.](https://stackoverflow.com/a/49673748/11844003) `ResponseEntity<T>` represents the **entire HTTP response**.
+validation in controller or service?
 
-Where does the `@Transactional` annotation belong? [I think transactions belong on the service layer. It's the one that knows about units of work and use cases.](https://stackoverflow.com/a/1079125/11844003)
+> [In the service.](https://stackoverflow.com/a/46480007/11844003) Controllers should be light-weight and pass on requests.
 
-[setting custom properties in a spring-boot way](https://stackoverflow.com/a/32066380)
+return `ResponseEntity` vs return pojo
 
-[spring doc (swagger)](https://springdoc.org/properties.html)
+> [Returning just a bean is fine but doesn't give you much flexibility.](https://stackoverflow.com/a/49673748/11844003) `ResponseEntity<T>` represents the **entire HTTP response**.
 
-## todo
+Where does the `@Transactional` annotation belong?
 
-[am I supports to use a service layer](https://stackoverflow.com/questions/9633498/do-i-really-need-a-service-layer) ya outa ur goddamn mind?
+> [I think transactions belong on the service layer. It's the one that knows about units of work and use cases.](https://stackoverflow.com/a/1079125/11844003)
 
-[about dependency injection, he said](https://stackoverflow.com/questions/39890849/what-exactly-is-field-injection-and-how-to-avoid-it#comment67070350_39891473)
+[am I supports to use a service layer?](https://stackoverflow.com/questions/9633498/do-i-really-need-a-service-layer)
+
+> ya outa ur goddamn mind?
+
+about dependency injection, [he said](https://stackoverflow.com/questions/39890849/what-exactly-is-field-injection-and-how-to-avoid-it#comment67070350_39891473)
 
 > Very ugly constructor with 8 dependencies is actually awesome as it is a red flag that something is wrong, class has too many dependencies and is probably violating single responsibility principle and should be refactored.
 
-[aop choices](https://stackoverflow.com/questions/433475/performance-impact-of-using-aop)
+[best practice to handle duplicate entry](https://softwareengineering.stackexchange.com/questions/350996/what-will-be-the-best-practice-to-handle-duplicate-entry-in-db-in-spring-mvc-th)
+
+[performance impact of using aop](https://stackoverflow.com/questions/433475/performance-impact-of-using-aop)
+
+[profile via spring and profile via build tool](https://stackoverflow.com/questions/66103584/what-is-the-difference-between-profiles-via-spring-or-via-a-build-tool-like-mave)
 
 ## application configuration
 
-`spring.profiles.active` A _profile_ is a mechanism to differentiate the configuration data consumed by the app. ...
+[Profile 使用讲解](https://www.cnblogs.com/zwwhnly/p/11350018.html)
+
+[spring doc (swagger)](https://springdoc.org/properties.html)
 
 [configure hikaricp with jtds](https://stackoverflow.com/questions/42247864/configure-hikaricp-in-spring-boot-with-jtds)
 
 [multiple datasource with `jdbc-url`](https://stackoverflow.com/questions/49088847/after-spring-boot-2-0-migration-jdbcurl-is-required-with-driverclassname)
+
+[setting custom properties in a spring-boot way](https://stackoverflow.com/a/32066380)
 
 ### logging
 
@@ -118,9 +130,11 @@ default log location? [loggers are pre-configured to use console output](https:/
 
 - com.mysql.cj.jdbc.exceptions.CommunicationsException [check this](https://stackoverflow.com/questions/69394504/connection-com-mysql-cj-jdbc-connectionimplee48bb3-marked-as-broken-because-of) and [this](https://stackoverflow.com/questions/11301707/attempt-to-reconnect-jdbc-pool-datasource-after-database-restarts)
 
-- [v2ex Hikari 连接池，连接超时被关闭](https://www.v2ex.com/t/688926#r_9231887)
+- [(v2ex) Hikari 连接池，连接超时被关闭](https://www.v2ex.com/t/688926#r_9231887)
 
 - [can I do validation using Spring Data JDBC?](https://stackoverflow.com/a/62403357/11844003) Spring Data JDBC does no validation. (p.s. Validation should happen in the constructor so that it is not possible to create an invalid object in the first place.)
+
+- [hikari, `Thread starvation or clock leap detected`](https://stackoverflow.com/questions/38703876/log-warning-thread-starvation-or-clock-leap-detected-housekeeper-delta-springh) If you run the app locally and the computer went to sleep it happens.
 
 ## old world
 

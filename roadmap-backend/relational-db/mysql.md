@@ -119,6 +119,8 @@ both `2022/1/2` and `2022-01-02` is valid to be inserted to a date type column, 
 
 [impact of different length of varchar fields?](https://stackoverflow.com/a/1962329/11844003) temporary tables and MEMORY tables store a VARCHAR column as a fixed-length column. So it'll consume more memory than you have to, which affects cache efficiency, sorting speed, etc. [see also](https://dba.stackexchange.com/questions/76469/mysql-varchar-length-and-performance)
 
+[usage of decimal](https://www.cnblogs.com/owenma/p/7097602.html)
+
 ## sql
 
 [change a `not null` column to a `null` column?](https://stackoverflow.com/questions/2607775/how-can-a-not-null-constraint-be-dropped) `alter table which_one modify column which_c int null;`
@@ -174,7 +176,13 @@ where
 
 Unknown command `'\''` error when do imp? [You have binary blobs in your DB, try adding `--hex-blob` to your mysqldump statement.](https://stackoverflow.com/a/5915062/11844003)
 
-UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/a/1262848) and [ref2](https://www.cnblogs.com/duanxz/p/5099030.html)
+UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/a/1262848), [ref2](https://www.cnblogs.com/duanxz/p/5099030.html) and [ref3](https://dba.stackexchange.com/questions/213045/update-same-values-in-the-field-with-different-values-in-mysql)
+
+```sql
+UPDATE my_table AS w
+  JOIN auxtable AS z ON z.id = w.id
+   SET w.col2 = z.value
+```
 
 [conditionally enforce a uniqueness constraint](https://stackoverflow.com/a/18293770/11844003)
 
@@ -183,6 +191,12 @@ UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/
 > Then you can have both an active and inactive user name at the same time. You will not be able to have two active user names.
 >
 > If you want multiple inactive names, use `NULL` for the value of `isactive`. `NULL` values can be repeated in a unique index.
+
+[discard apart from data if the data length excess the field's length?](https://stackoverflow.com/a/3186497/11844003)
+- create a trigger, or
+- use some function directly in the code `insert into tbl (field1) values (substring('long-text', 1, col_length))`
+
+variable column names using prepared statements? [NO, you can only set column values as PreparedStatement values](https://stackoverflow.com/a/3136049/11844003)
 
 ## indexing
 
@@ -205,6 +219,8 @@ UPDATE with SELECT query (update join) ? check [ref1](https://stackoverflow.com/
 [current date as default not working for 5.x](https://stackoverflow.com/a/20461045/11844003) the default value must be a constant; it cannot be a function or an expression. The exception is that you can specify `CURRENT_TIMESTAMP` as the default for a `TIMESTAMP` column.
 
 [is there a clause like `drop column if exists`?](https://stackoverflow.com/questions/173814/using-alter-to-drop-a-column-if-it-exists-in-mysql) no? yes?
+
+`alter ... drop index/constraint`
 
 ## ref
 

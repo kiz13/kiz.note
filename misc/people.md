@@ -28,6 +28,9 @@
 - [Brian Tompsett - 汤莱恩](https://stackoverflow.com/users/4370109/brian-tompsett-%e6%b1%a4%e8%8e%b1%e6%81%a9)
 - [Jake Feasel](https://stackoverflow.com/users/808921/jake-feasel)
 - [Gordon Linoff](https://stackoverflow.com/users/1144035/gordon-linoff) db
+- [Deadpool](https://stackoverflow.com/users/9959152/deadpool) java
+- [Michael Myers](https://stackoverflow.com/users/13531/michael-myers)
+- [Saptarshi Basu](https://stackoverflow.com/users/1235935/saptarshi-basu)
 
 ## other people
 
