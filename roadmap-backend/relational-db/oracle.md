@@ -425,6 +425,8 @@ If you specify a negative scale, Oracle Database rounds the actual data to the s
 
 The LOB datatypes `BLOB`, `CLOB`, `NCLOB`, and `BFILE` enable you to store and manipulate large blocks of unstructured data (such as text, graphic images, video clips, and sound waveforms) in binary or character format.
 
+[keep lob data in separate tables?](https://stackoverflow.com/questions/2887552/database-design-with-blobs-keep-in-separate-tables)
+
 ### date/time
 
 - [timezone issues 1](https://stackoverflow.com/questions/68185028/why-are-oracle-time-zones-wrong)

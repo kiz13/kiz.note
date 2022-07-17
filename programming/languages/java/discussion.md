@@ -54,6 +54,8 @@
 
 [interface naming](https://stackoverflow.com/questions/541912/interface-naming-in-java)
 
+[very long class name](https://stackoverflow.com/questions/3218263/very-long-class-names)
+
 ## helping links
 
 - [Google Best Practices for Java Libraries](https://jlbp.dev/)

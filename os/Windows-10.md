@@ -119,6 +119,8 @@ touch-pad lagging movement - 断电之后触摸板好使了，插上电后又恢
 
 [Why are changes to my PATH not being recognised?](https://superuser.com/questions/107521/why-are-changes-to-my-path-not-being-recognised)
 
+[The application runs from console seems to randomly stop running. What is going on?](https://stackoverflow.com/questions/33883530/why-is-my-command-prompt-freezing-on-windows-10) The issue ended up being a new feature of the Windows 10 console. Under the default config, whenever you click on a command window, it immediately halts the application process when it attempts to write to the console. When this happens, the command window has gone into "selection" mode. To get the program running again, you have to press escape or click somewhere else. To get rid of this behavior, you can disable **QuickEdit** mode. See also [what does it do exactly if i click in the window of cmd](https://superuser.com/questions/459609/what-does-it-do-exactly-if-i-click-in-the-window-of-cmd) and [how and why does QuickEdit mode in command prompt freeze application](https://stackoverflow.com/questions/30418886/how-and-why-does-quickedit-mode-in-command-prompt-freeze-applications)
+
 ### wtf
 
 [微软拼音输入法未显示选字栏](https://blog.csdn.net/Reborn_Lee/article/details/107445793) 微软拼音 -> 常规 -> 兼容性 -> 选择以前版本的输入法

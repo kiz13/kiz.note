@@ -14,6 +14,8 @@ VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` 
 
 send increment value on each request? [ref1](https://stackoverflow.com/questions/52000899/jmeter-increment-value-before-each-sampler-request) and [ref2](https://sqa.stackexchange.com/questions/49189/how-to-increment-value-of-json-variable-in-jmeter)
 
+[the response contains garbled character?](https://stackoverflow.com/questions/8488811/jmeter-sample-response-encoding) set `sampleresult.default.encoding=UTF-8` in _jmeter.properties_
+
 ## Chrome
 
 (chrome) <kbd>Shift</kbd> + <kbd>Esc</kbd> opens task manager
@@ -57,6 +59,8 @@ chrome not opening any pages? Maybe some extension cause it, uninstall 'em to ch
 [post image?](https://stackoverflow.com/questions/39660074/post-image-data-using-postman)
 
 [import cURL?](https://stackoverflow.com/questions/27957943/simulate-a-specific-curl-in-postman) click Import on the upper left side | switch to Raw text tab | paste cURL | go
+
+[where are collections saved?](https://stackoverflow.com/questions/47399809/where-are-postman-collections-saved)
 
 ## Spotify
 

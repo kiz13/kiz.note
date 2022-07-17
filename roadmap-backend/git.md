@@ -35,6 +35,11 @@ add line break to the commit message? [Simon's answer](https://stackoverflow.com
   git commit -m "head line" -m "content line." 
   ```
 
+[behavior of backticks in git commit message](https://stackoverflow.com/questions/71155954/backticks-in-git-commit-message) Using backticks is a way to tell the shell to execute the content, it's called **command substitution**. You can try with
+```shell
+echo "hello `ls` world"
+```
+
 ### undo
 
 [undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add) `git reset` will unstage all the files you've added after your last commit
@@ -126,6 +131,13 @@ to view the change history of a file, use `git log --follow -p -- path/to/file`,
 - `--follow` ensures that you see file renames
 - `-p` ensures that diffs are included for each change
 - `--` tells Git that it has reached the end of the options and that anything that follows `--` should be treated as an argument
+
+[use `--since`](https://stackoverflow.com/questions/14618022/how-does-git-log-since-count)
+- `git log --since="2022-02-22"`
+- `git log --after="2014-02-12T16:36:00-07:00"`
+- `git log --before="2014-02-12T16:36:00-07:00"`
+- `git log --since="1 month ago"`
+- `git log --since="2 weeks 3 days 2 hours 30 minutes 59 seconds ago"`
 
 #### files
 

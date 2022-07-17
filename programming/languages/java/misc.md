@@ -1,5 +1,7 @@
 # *
 
+[historical Java releases](https://www.oracle.com/java/technologies/downloads/archive/)
+
 ## java web
 
 - [eclipse 根据 `.wsdl` 文件自动生成 webservice 的调用客户端](https://www.cnblogs.com/wqsbk/p/5297223.html)

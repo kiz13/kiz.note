@@ -38,6 +38,8 @@ A [JDBC driver](https://en.wikipedia.org/wiki/JDBC_driver) is a software compone
 
 - jdbc, [writing sql w/o prepared statement](https://stackoverflow.com/questions/47272504/getting-rid-of-sql-injection-without-using-prepared-statement)? insecure
 
+- [Is it possible to detect 100% of sql injection attacks with regex](https://security.stackexchange.com/questions/203843/is-it-possible-to-detect-100-of-sqli-with-a-simple-regex)
+
 ## relation?
 
 [Entity-attribute-value model](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)

@@ -107,6 +107,8 @@ blob size:
 
 [format date from millisecond](https://stackoverflow.com/questions/18176088/mysql-select-formatted-date-from-millisecond-field)
 
+[store blob in same table or not?](https://stackoverflow.com/questions/13760998/store-text-blob-in-same-table-or-not)
+
 speed issues - select on tables containing blob? [Many people recommend using blob with only one primary key in a separate table and storing the blob metadata in another table with a foreign key to the blob table.](https://stackoverflow.com/a/13421726/11844003)
 
 Operand should contain 1 column error? [In my case, the problem was that I surrounded my columns' selection with parenthesis by mistake](https://stackoverflow.com/a/63780290/11844003)

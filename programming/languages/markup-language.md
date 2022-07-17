@@ -36,3 +36,5 @@ What does `<![CDATA[]]>` mean? [CDATA stands for Character Data](https://stackov
   3. All spaces are converted to hyphens.
   4. Two or more hyphens in a row are converted to one.
   5. If a header with the same ID has already been generated, a unique incrementing number is appended, starting at 1.
+
+- draw checkbox in table? [you can use html entity `&check;` \(\&check\); and `&cross;` \(\&cross;\)](https://stackoverflow.com/a/60687493/11844003)

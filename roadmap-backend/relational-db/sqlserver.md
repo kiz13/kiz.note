@@ -9,6 +9,8 @@
 
 [meaning of the prefix N?](https://stackoverflow.com/questions/10025032/what-is-the-meaning-of-the-prefix-n-in-t-sql-statements-and-when-should-i-use-it) It denotes that the subsequent string is in Unicode \(the N actually stands for National language character set\). Which means that you are passing an `NCHAR`, `NVARCHAR` or `NTEXT` value, as opposed to `CHAR`, `VARCHAR` or `TEXT`.
 
+[store images in the table?](https://stackoverflow.com/questions/5613898/storing-images-in-sql-server/5613926#5613926)
+
 ## run sql
 
 [pagination](https://stackoverflow.com/questions/2135418/equivalent-of-limit-and-offset-for-sql-server)
@@ -27,6 +29,12 @@ play with `varbinary`
 - how to create column for storing large binary data? [`varbinary(max)`](https://stackoverflow.com/a/8240903/11844003)
 - how to insert string into a varbinary column? [SQL Server requires an explicit conversion from varchar to varbinary](https://stackoverflow.com/a/3275585/11844003), then use `cast('text' as varbinary)` / `convert(varbinary, 'text')`
 - [how to set limit of a varbinary column?](https://stackoverflow.com/questions/34741079/can-i-set-2-mb-for-maximum-size-of-varbinary) use `CONSTRAINT`: `alter ... add constraint xxx check (datalength(col) <= :limit)`
+
+[do large varbinary data affect select queries?](https://dba.stackexchange.com/questions/232941/do-varcharmax-nvarcharmax-and-varbinarymax-columns-affect-select-queries)
+
+[improve performance of table with image fields?](https://stackoverflow.com/questions/2253582/how-to-improve-performance-in-sql-server-table-with-image-fields)
+
+escape single quote? use another single quote `select 'my name''s slim shady'` [ref](https://stackoverflow.com/questions/1586560/how-do-i-escape-a-single-quote-in-sql-server)
 
 ## jdbc
 

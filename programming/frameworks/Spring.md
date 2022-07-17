@@ -112,8 +112,6 @@ default log location? [loggers are pre-configured to use console output](https:/
 
 - The default constructor exists only for the sake of JPA
 
-- [namedparameterjdbctemplate vs jdbctemplate](https://stackoverflow.com/questions/16359316/namedparameterjdbctemplate-vs-jdbctemplate)
-
 - [use beanpropertyrowmapper without matching column names?](https://stackoverflow.com/questions/9469586/spring-how-to-use-beanpropertyrowmapper-without-matching-column-names)
 
 - [insert "null primitive" in jdbc?](https://stackoverflow.com/a/17657152/11844003) use `setObject` instead
@@ -121,10 +119,6 @@ default log location? [loggers are pre-configured to use console output](https:/
 - [jpa not support java time instant](https://stackoverflow.com/questions/49309076/why-jpa-does-not-support-java-time-instant)
 
 - [using `like` in prepared statement](https://stackoverflow.com/questions/8247970/using-like-wildcard-in-prepared-statement) `ps.setString(1, "%" + sb + "%")`
-
-- [comparison, spring data jdbc jpa etc](https://stackoverflow.com/questions/42470060/spring-data-jdbc-spring-data-jpa-vs-hibernate)
-
-- [jpa / jdbc](https://stackoverflow.com/questions/4406310/why-use-jpa-instead-of-writing-the-sql-query-using-jdbc)
 
 - [org.hibernate.QueryException: Space is not allowed after parameter prefix ':' ?](https://stackoverflow.com/a/54117834/11844003) escape the assignment operator in the native query like `"xxx \\:="` (p.s. but this leads to a problem, check the `idea.log`) see [also](https://stackoverflow.com/questions/9460018/how-can-i-use-mysql-assign-operator-in-hibernate-native-query)
 
@@ -135,6 +129,18 @@ default log location? [loggers are pre-configured to use console output](https:/
 - [can I do validation using Spring Data JDBC?](https://stackoverflow.com/a/62403357/11844003) Spring Data JDBC does no validation. (p.s. Validation should happen in the constructor so that it is not possible to create an invalid object in the first place.)
 
 - [hikari, `Thread starvation or clock leap detected`](https://stackoverflow.com/questions/38703876/log-warning-thread-starvation-or-clock-leap-detected-housekeeper-delta-springh) If you run the app locally and the computer went to sleep it happens.
+
+- [`ChainedTransactionManager`](https://stackoverflow.com/questions/48954763/spring-transactional-with-a-transaction-across-multiple-data-sources)
+
+- `keyHolder.getKey()` returns `null`? set the second parameter to `Statement.RETURN_GENERATED_KEYS` in `connection.prepareStatement()` [credit](https://stackoverflow.com/a/53656226/11844003)
+
+### comparison
+
+- [namedparameterjdbctemplate vs jdbctemplate](https://stackoverflow.com/questions/16359316/namedparameterjdbctemplate-vs-jdbctemplate)
+
+- [spring data jdbc jpa etc](https://stackoverflow.com/questions/42470060/spring-data-jdbc-spring-data-jpa-vs-hibernate)
+
+- [jpa / jdbc](https://stackoverflow.com/questions/4406310/why-use-jpa-instead-of-writing-the-sql-query-using-jdbc)
 
 ## old world
 

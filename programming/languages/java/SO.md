@@ -194,6 +194,8 @@
 
 - [FixedThreadPool vs CachedThreadPool: the lesser of two evils?](https://stackoverflow.com/questions/17957382/fixedthreadpool-vs-cachedthreadpool-the-lesser-of-two-evils)
 
+- [synchronize on a local variable](https://stackoverflow.com/questions/43134998/is-it-reasonable-to-synchronize-on-a-local-variable)
+
 ## db
 
 [how to write sql updating a blob](https://stackoverflow.com/questions/8348427/how-to-write-update-oracle-blob-in-a-reliable-way)

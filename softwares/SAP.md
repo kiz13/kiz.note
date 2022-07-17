@@ -169,3 +169,5 @@ TO_TIMESTAMP(TO_VARCHAR(COALESCE("CreateDate",'19700101'), 'YYYYMMDD') || ' ' ||
 [\(csdn\) 通过DI连接SAP实现添加单据功能 \(java\)](https://blog.csdn.net/qq_35844400/article/details/110928817)
 
 [\(cnblog\) SAP常见查询组合](https://www.cnblogs.com/sapSB/p/11969537.html)
+
+[\(sap blogs\) DI API Global Transactions](https://blogs.sap.com/2017/02/03/using-di-api-global-transactions/)
