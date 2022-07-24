@@ -21,15 +21,15 @@ reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v AllowSearchT
 reg add HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Search /f /v CortanaConsent /t REG_DWORD /d 0
 ```
 
-[禁用时间轴](https://blog.csdn.net/cumai3211/article/details/109041476) Settings - Privacy - Activity history - toggle the `在此设备上存储 xxx`
+[禁用时间轴](https://blog.csdn.net/cumai3211/article/details/109041476) Settings > Privacy > Activity history > toggle the `在此设备上存储 xxx`
 
-[do not show recently added section at the top of start menu app list](https://www.howtogeek.com/694731/how-to-remove-recently-added-apps-in-windows-10s-start-menu/) Settings - Personalization - Start - toggle the `show recent added apps` button
+[do not show recently added section at the top of start menu app list](https://www.howtogeek.com/694731/how-to-remove-recently-added-apps-in-windows-10s-start-menu/) Settings > Personalization > Start > toggle the `show recent added apps` button
 
-[create a system restore point before doing any registry modifications](https://www.youtube.com/watch?v=9IU6Y7IW00o) 高级系统设置 - 系统保护 tab
+[create a system restore point before doing any registry modifications](https://www.youtube.com/watch?v=9IU6Y7IW00o) 高级系统设置 > 系统保护 tab
 
-[桌面上无 Desktop icon?](https://www.online-tech-tips.com/computer-tips/desktop-icons-missing-or-disappeared/) Settings - Personalization - Theme - Desktop icon settings
+[桌面上无 Desktop icon?](https://www.online-tech-tips.com/computer-tips/desktop-icons-missing-or-disappeared/) Settings > Personalization > Theme > Desktop icon settings
 
-[ie 卸了再装回来](https://www.zhihu.com/question/60218250) 设置 - 应用 - 应用和功能 - 可选功能
+[ie 卸了再装回来](https://www.zhihu.com/question/60218250) 设置 > 应用 > 应用和功能 > 可选功能
 
 登录微软账号错误？[换微软的dns](https://www.zhihu.com/question/39072396/answer/82532105) `4.2.2.1` and `4.2.2.2`
 
@@ -70,7 +70,7 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 
 [关闭笔记本自带键盘 - 知乎harry159821的回答](https://www.zhihu.com/question/36434420/answer/279030735)
 
-[Windows 无法弹出U盘终极解决方法](https://zhuanlan.zhihu.com/p/161364971) 管理工具 - 事件查看器 - 管理事件 - 等等等等
+[Windows 无法弹出U盘终极解决方法](https://zhuanlan.zhihu.com/p/161364971) 管理工具 > 事件查看器 > 管理事件 > 等等等等
 
 [remove items from the right click context menu](https://superuser.com/questions/5011/how-to-remove-items-from-the-right-click-context-menu-in-windows)
 
@@ -89,7 +89,7 @@ activate **GodMode**(a special folder that gives you quick access to over 200 to
 
 给没有 Microsoft Store 的电脑安装 TranslucentTB? filehorse [.exe build](https://www.filehorse.com/download-translucenttb/)
 
-fix DNS_PROBE_FINISHED_NXDOMAIN error? 某天在访问内网页面时出现了这个错误，我的情况是之前配置过的 dns 导致的（设置 | 更改适配器选项 | 某个网络属性 | TCP/IPv4 属性 | DNS Server）设置为原来的自动获得 DNS 服务器地址就好了（之前去改这个这个 dns 设置是因为登录微软 Office 账号的时候出现了错误，后来才发现是挂着代理的缘故） [MS forum 上 JinsonKV 的回答](https://answers.microsoft.com/en-us/windows/forum/all/error-dnsprobefinishednxdomain-when-opening-the/4b98a419-80d7-497f-b551-d4283c5978c7)
+fix DNS_PROBE_FINISHED_NXDOMAIN error? 某天在访问内网页面时出现了这个错误，我的情况是之前配置过的 dns 导致的（设置 > 更改适配器选项 > 某个网络属性 > TCP/IPv4 属性 > DNS Server）设置为原来的自动获得 DNS 服务器地址就好了（之前去改这个这个 dns 设置是因为登录微软 Office 账号的时候出现了错误，后来才发现是挂着代理的缘故） [MS forum 上 JinsonKV 的回答](https://answers.microsoft.com/en-us/windows/forum/all/error-dnsprobefinishednxdomain-when-opening-the/4b98a419-80d7-497f-b551-d4283c5978c7)
 
 [How to check if a binary is 32 or 64 bit?](https://superuser.com/questions/358434/how-to-check-if-a-binary-is-32-or-64-bit-on-windows)
 - use `sigcheck.exe` from [SysInternals](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck): `sigcheck.exe C:\Windows\xxx.dll`, then check `MachineType` (answers by briantist)
@@ -123,7 +123,7 @@ touch-pad lagging movement - 断电之后触摸板好使了，插上电后又恢
 
 ### wtf
 
-[微软拼音输入法未显示选字栏](https://blog.csdn.net/Reborn_Lee/article/details/107445793) 微软拼音 -> 常规 -> 兼容性 -> 选择以前版本的输入法
+[微软拼音输入法未显示选字栏](https://blog.csdn.net/Reborn_Lee/article/details/107445793) 微软拼音 > 常规 > 兼容性 > 选择以前版本的输入法
 
 taskbar icon highlight sticks [check this](https://superuser.com/questions/61833/windows-7-taskbar-icon-highlight-sticks) and [this](https://www.reddit.com/r/Windows10/comments/4qlgqp/taskbar_icons_stay_highlighted_orange_forever/), u can try resetting the system
 
