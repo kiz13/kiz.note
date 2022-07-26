@@ -87,6 +87,7 @@ class DTest {
       }
     }
     if (doc.add() == 0) {
+      String newlyGenerateKeyStr = sap.getCompany().GetNewObjectKey();
       log.info(/**/);
     } else {
       log.error(/**/);
@@ -99,11 +100,13 @@ class DTest {
 
 [Cannot change `DocDate` or `TaxDate` \(GoodsReceipt\)](https://answers.sap.com/questions/6523583/problame-in-receipt-from-production-in-sap-2007.html)
 
+[get DocNum from a document just created](https://answers.sap.com/questions/456826/docnum-from-a-document-just-created.html)
+
 #### udo
 
 [adding new record in user defined table](https://answers.sap.com/questions/10921803/adding-new-record-in-user-table-via-di-api.html)
 
-[how o pass parameters to `GeneralService`](https://answers.sap.com/questions/54732/jco-sap-b1-how-to-pass-parameters-to-generalservic.html)
+[how to pass parameters to `GeneralService`](https://answers.sap.com/questions/54732/jco-sap-b1-how-to-pass-parameters-to-generalservic.html) 👈 the guy on the thread gives some nice explanatory notes
 
 [a transaction already active](https://answers.sap.com/questions/3302255/a-transaction-already-active.html)
 
@@ -121,7 +124,8 @@ class UTest {
       bill.setProperty("U_B_Doc_entry", "" + 1);
       bill.setProperty("ass", "");
       // ... other udf
-      generalService.add(bill);
+      IGeneralDataParams parma = generalService.add(bill);
+      int newlyGeneratedKey = Dispatch.call(param.retrieveRawGeneralDataParams(), "GetProperty", "DocEntry").getInt();
       if (sap.getCompany().isInTransaction()) {
         sap.getCompany().endTransaction(SBOCOMConstants.BoWfTransOpt_wf_Commit);
       }
@@ -145,6 +149,8 @@ class UTest {
 
 [update user defined table data](https://answers.sap.com/questions/7240525/updating-user-defined-table-master-data-lines-via-.html)
 
+[get auto generated object key from the udo just created](https://answers.sap.com/comments/11850945/view.html)
+
 ### run it
 
 If you installed 32bit di api, make sure you run your program with a 32bit jre, e.g., `jre-8u333`
@@ -157,6 +163,8 @@ how to convert `CreateDate` and `CreateTS` to timestamp ? `CreateTS` and `Update
 ```sql
 TO_TIMESTAMP(TO_VARCHAR(COALESCE("CreateDate",'19700101'), 'YYYYMMDD') || ' ' || LPAD(COALESCE("CreateTS",0),6,0),'YYYYMMDD HH24MISS')
 ```
+
+[Pagination query](https://help.sap.com/docs/SAP_ASE/e0d4539d39c34f52ae9ef822c2060077/26d84b4ddae94fed89d4e7c88bc8d1e6.html?version=16.0.4.0&locale=en-US) e.g., `select ... limit 13 offset 31`
 
 ## helping links
 
