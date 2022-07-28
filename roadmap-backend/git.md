@@ -146,6 +146,12 @@ to view the change history of a file, use `git log --follow -p -- path/to/file`,
 - `-r` recurse into subdirectories
 - `--name-only` show only the file names
 
+[count number of lines in a git repo](https://stackoverflow.com/questions/4822471/count-number-of-lines-in-a-git-repository)
+
+- `git ls-files | xargs cat | wc -l`
+- or `git ls-files | xargs wc -l` with detailed information
+- with filters `git ls-files | grep xxx | grep -v yy | xargs wc -l`
+
 #### diff
 
 [see the differences between two branches?](https://stackoverflow.com/questions/9834689/how-can-i-see-the-differences-between-two-branches) `git diff --name-only branch1 branch2 [--]` appending that `--` if the branch name also name some files

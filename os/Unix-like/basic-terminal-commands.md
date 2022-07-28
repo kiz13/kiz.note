@@ -3,6 +3,7 @@
 - check os information `cat /etc/os-release`
 - `curl` [post file](https://stackoverflow.com/questions/12667797/using-curl-to-upload-post-data-with-files)
 - [Use grep --exclude/--include syntax](https://stackoverflow.com/questions/221921/use-grep-exclude-include-syntax-to-not-grep-through-certain-files) `grep pattern -r --include=\*.cpp --include=\*.h rootdir`
+- [exclude words with grep with `--invert-match`](https://stackoverflow.com/questions/4538253/how-can-i-exclude-one-word-with-grep) `grep -v "unwanted_word" file`
 - [how to get full path of a file?](https://stackoverflow.com/questions/5265702/how-to-get-full-path-of-a-file) `readlink -f filename.extension`
 - [ping doesn't stop?](https://askubuntu.com/questions/200989/ping-for-4-times) `alias ping="ping -c 4"`, with the `-c` option, it will stop after sending 4 ECHO_REQUEST packets, check the [man page](https://man7.org/linux/man-pages/man8/ping.8.html)
 - [list the disk usage of directories?](https://stackoverflow.com/questions/1019116/using-ls-to-list-directories-and-their-total-sizes) `du -sh`
@@ -15,6 +16,7 @@
   - `v` for verbose
   - `z` for gnuzip
   - `f` for file, should come at last just before file name.
+- [explanatory of different outputs with `file`](https://unix.stackexchange.com/a/151035)
 
 ## ssh
 

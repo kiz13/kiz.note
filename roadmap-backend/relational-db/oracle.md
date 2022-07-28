@@ -277,6 +277,19 @@ implicit number and character conversion
 
 - [多对多映射](https://www.cnblogs.com/lgxlsm/archive/2013/05/15/3080994.html)
 
+- [paging](https://stackoverflow.com/a/241657)
+
+  ```sql
+  select *
+  from (select
+          "a",
+          "b",
+          row_number() over (order by "c" desc) rn
+        from "my_tbl")
+  where rn between :n and :m  /* between 1 + (pageN - 1) * sizeN and pageN * sizeN */
+  order by rn;
+  ```
+
 ---
 
 **PL/SQL** stands for procedural language extension to the _structured query language_

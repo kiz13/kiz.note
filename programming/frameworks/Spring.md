@@ -108,6 +108,10 @@ default log location? [loggers are pre-configured to use console output](https:/
 
 - [configure jackson `objectmapper`](https://stackoverflow.com/a/32842962/11844003)
 
+- [ignore unmapped fields](https://stackoverflow.com/questions/5455014/ignoring-new-fields-on-json-objects-using-jackson)
+  - `@JsonIgnoreProperties(ignoreUnknown = true)`
+  - `ObjectMapper#configure(Deserializationxxx.yyy)`
+
 ## dao
 
 - The default constructor exists only for the sake of JPA
@@ -135,6 +139,8 @@ default log location? [loggers are pre-configured to use console output](https:/
 - `keyHolder.getKey()` returns `null`? set the second parameter to `Statement.RETURN_GENERATED_KEYS` in `connection.prepareStatement()` [credit](https://stackoverflow.com/a/53656226/11844003)
 
 ### comparison
+
+- difference between hibernate and spring data jpa? [Hibernate is a JPA implementation, while Spring Data JPA is a JPA data access abstraction. Spring Data JPA cannot work without a JPA provider](https://stackoverflow.com/a/23863416)
 
 - [namedparameterjdbctemplate vs jdbctemplate](https://stackoverflow.com/questions/16359316/namedparameterjdbctemplate-vs-jdbctemplate)
 
