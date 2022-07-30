@@ -95,6 +95,8 @@ fix DNS_PROBE_FINISHED_NXDOMAIN error? 某天在访问内网页面时出现了�
 - use `sigcheck.exe` from [SysInternals](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck): `sigcheck.exe C:\Windows\xxx.dll`, then check `MachineType` (answers by briantist)
 - use `file` utility from cgywin or git: `file xxx.exe`, PE32 for 32 bit, PE32+ for 64 bit (answers by wmassingham)
 
+find out which process is locking a file or folder? **Resource Monitor** (run `resmon.exe` to open it directly) > CPU tab > Associated Handles > in the search field, type the file or folder name and go [credit](https://superuser.com/a/643312/1233932)
+
 ## why
 
 错误信息：`C:\Program` 不是不是内部或外部命令 也不是可运行的程序？这是因为 Java 安装在了 `C:\Program Files\` 下 导致最终的 PATH 变量中包含了空格
