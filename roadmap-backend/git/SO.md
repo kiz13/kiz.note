@@ -174,6 +174,8 @@ git error: failed to push some refs to remote, [for me, I just needed to run "gi
 
 ## helping links
 
+- [Git User Manual](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
+- [Visual Git Reference](https://marklodato.github.io/visual-git-guide/index-en.html)
 - tool [repo visualization](https://next.github.com/projects/repo-visualization/)
 - roriri 的博客 [commit message 格式参考](https://roriri.one/2019/12/06/git-commit-message/)
 - v2ex [`git commit message` 用中文還是英文的帖子](https://www.v2ex.com/t/221152)
