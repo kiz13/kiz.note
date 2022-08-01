@@ -46,6 +46,8 @@
 
 [logging best practice?](https://stackoverflow.com/questions/906233/logging-in-java-and-in-general-best-practices)
 
+[avoiding `NullPointerException`](https://stackoverflow.com/questions/271526/avoiding-nullpointerexception-in-java)
+
 ## naming
 
 [file naming](https://stackoverflow.com/questions/421965/anyone-else-find-naming-classes-and-methods-one-of-the-most-difficult-parts-in-p)
