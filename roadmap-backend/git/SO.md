@@ -36,6 +36,7 @@ add line break to the commit message? [Simon's answer](https://stackoverflow.com
   ```
 
 [behavior of backticks in git commit message](https://stackoverflow.com/questions/71155954/backticks-in-git-commit-message) Using backticks is a way to tell the shell to execute the content, it's called **command substitution**. You can try with
+
 ```shell
 echo "hello `ls` world"
 ```
@@ -112,7 +113,7 @@ git checkout -b localname origin/remote_branch_name
 `git config --global user.name "John Doe"`
 
 `git config --global --unset core.xxx`
- 
+
 [where is the global `.gitconfig` file](https://stackoverflow.com/a/17619024/11844003), do a `git config --global -e` and then, if you're lucky, you will get a text editor loaded with the global `.gitconfig` file. (created if missing)
 
 ### statistics
@@ -133,6 +134,7 @@ to view the change history of a file, use `git log --follow -p -- path/to/file`,
 - `--` tells Git that it has reached the end of the options and that anything that follows `--` should be treated as an argument
 
 [use `--since`](https://stackoverflow.com/questions/14618022/how-does-git-log-since-count)
+
 - `git log --since="2022-02-22"`
 - `git log --after="2014-02-12T16:36:00-07:00"`
 - `git log --before="2014-02-12T16:36:00-07:00"`
