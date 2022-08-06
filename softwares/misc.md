@@ -12,9 +12,11 @@ VisualVM, change the displaying font size? Start VisualVM with the `--fontsize` 
 
 使用 JMeter [ref1](https://www.cnblogs.com/stulzq/p/8971531.html) and [ref2](https://www.cnblogs.com/dinghanhua/p/5646435.html)
 
-send increment value on each request? [ref1](https://stackoverflow.com/questions/52000899/jmeter-increment-value-before-each-sampler-request) and [ref2](https://sqa.stackexchange.com/questions/49189/how-to-increment-value-of-json-variable-in-jmeter)
+send increment value on each request?
+- [use _User Parameters_](https://stackoverflow.com/questions/52000899/jmeter-increment-value-before-each-sampler-request)
+- inside json, `"key"="${__intSum(,${__counter(,)},)}"` [source](https://sqa.stackexchange.com/a/49190)
 
-[the response contains garbled character?](https://stackoverflow.com/questions/8488811/jmeter-sample-response-encoding) set `sampleresult.default.encoding=UTF-8` in _jmeter.properties_
+the response body contains garbled (chinese) character | [响应结果乱码 \(51cto\)](https://blog.51cto.com/ydhome/1864340) HTTP Request > Add PostProcessor > BeanShell PostProcessor > `prev.setDataEncoding("UTF-8")`
 
 ## Chrome
 

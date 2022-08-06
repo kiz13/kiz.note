@@ -198,6 +198,10 @@
 
 - [synchronize on a local variable](https://stackoverflow.com/questions/43134998/is-it-reasonable-to-synchronize-on-a-local-variable)
 
+- private lock and intrinsic lock? With a "private" lock, [you can easily see every piece of code which acquires that lock](https://stackoverflow.com/a/7513271). [You probably don't want to do either, however! Find the appropriate class in `java.util.concurrent` and use that instead.](https://stackoverflow.com/a/19840819)
+
+- [I use volatile fields when said field is ONLY UPDATED by its owner thread and the value is only read by other threads](https://stackoverflow.com/a/3787435)
+
 ## db
 
 [how to write sql updating a blob](https://stackoverflow.com/questions/8348427/how-to-write-update-oracle-blob-in-a-reliable-way)

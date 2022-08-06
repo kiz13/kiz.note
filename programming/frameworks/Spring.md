@@ -54,7 +54,7 @@ about dependency injection, [he said](https://stackoverflow.com/questions/398908
 
 ## application configuration
 
-[Profile 使用讲解](https://www.cnblogs.com/zwwhnly/p/11350018.html)
+[use spring profiles in SpringBoot (mkyong)](https://mkyong.com/spring-boot/spring-boot-profile-based-properties-and-yaml-example/)
 
 [spring doc (swagger)](https://springdoc.org/properties.html)
 
@@ -63,6 +63,10 @@ about dependency injection, [he said](https://stackoverflow.com/questions/398908
 [multiple datasource with `jdbc-url`](https://stackoverflow.com/questions/49088847/after-spring-boot-2-0-migration-jdbcurl-is-required-with-driverclassname)
 
 [setting custom properties in a spring-boot way](https://stackoverflow.com/a/32066380)
+
+SpringBoot uses [relaxed rules](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.typesafe-configuration-properties.relaxed-binding) for binding `Environment` properties to `@ConfigurationProperties` beans
+
+[springboot and prometheus_grafana](https://refactorfirst.com/spring-boot-prometheus-grafana)
 
 ### logging
 

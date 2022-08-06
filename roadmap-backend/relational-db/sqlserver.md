@@ -37,6 +37,15 @@ play with `varbinary`
 
 escape single quote? use another single quote `select 'my name''s slim shady'` [ref](https://stackoverflow.com/questions/1586560/how-do-i-escape-a-single-quote-in-sql-server)
 
+[convert `datetime` to `date`](https://docs.microsoft.com/en-us/sql/t-sql/functions/cast-and-convert-transact-sql?view=sql-server-ver16#date-and-time-styles), e.g.,
+- `convert(varchar, getdate(), 23)` => `yyyy-mm-dd`
+- `convert(varchar, getdate(), 101)` => `mm/dd/yyyy`
+
+[add a column after/before a specific column with `alter` clause?](https://stackoverflow.com/a/4732461) Nope, you better go with some other stuff
+- use SQL Server Management Studio
+- drop and re-adding the table
+- create a new table and moving the data over manually
+
 ## jdbc
 
 [mssql and jtds](https://stackoverflow.com/questions/4393766/differences-between-ms-sql-microsofts-jdbc-drivers-and-jtdss-driver)
