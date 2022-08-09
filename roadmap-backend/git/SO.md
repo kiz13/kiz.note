@@ -44,11 +44,11 @@ echo "hello `ls` world"
 
 [undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add) `git reset` will unstage all the files you've added after your last commit
 
+[undo the last git commit](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git) `git reset HEAD~`
+
 [undo a git reset?](https://stackoverflow.com/questions/2510276/how-to-undo-git-reset) `git reset 'HEAD@{xxx}'`
 
-[undo a git reset hard?](https://stackoverflow.com/questions/5473/how-can-i-undo-git-reset-hard-head1) it should be similar to the question above
-
-[yet another git reset](https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git)
+undo a git push [with `git revert` instead of 'force' push](https://stackoverflow.com/a/12247104/11844003)
 
 ### remote access
 

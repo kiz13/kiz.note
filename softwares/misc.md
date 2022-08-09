@@ -66,6 +66,7 @@ chrome not opening any pages? Maybe some extension cause it, uninstall 'em to ch
 
 ## Spotify
 
+- [ ] [bg color of lyrics is way too bright sometimes](https://community.spotify.com/t5/Closed-Ideas/Background-color-of-lyrics-is-hurting-my-eyes/idi-p/5210449) \*\*eyesore\*\*
 - [ ] after viewing a singer's profile, I press the back button, it scrolls to the bottom of the previous page [check this](https://community.spotify.com/t5/Desktop-Windows/Bug-scroll-goes-to-the-bottom-of-quot-Overview-quot/td-p/1688143)
 - [x] [my phone controls volume on my pc?](https://community.spotify.com/t5/Android/How-to-stop-my-phone-from-controlling-volume-on-my-computer/td-p/5080352) with the Spotify app open on both the pc and phone you can control the playback of the desktop app, so you need to close the Spotify app on your phone.
 - Jakub Steplowski's [SpotifyLyricsNET](https://github.com/JakubSteplowski/SpotifyLyricsNET) repo is deleted, now it's [versefy](https://versefy.app/)

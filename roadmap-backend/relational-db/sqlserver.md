@@ -12,6 +12,8 @@
 
 [store images in the table?](https://stackoverflow.com/questions/5613898/storing-images-in-sql-server/5613926#5613926)
 
+If an integer dividend is divided by an integer divisor, the result is an integer that has any fractional part of the result truncated. check [ms docs](https://docs.microsoft.com/en-us/sql/t-sql/language-elements/divide-transact-sql?view=sql-server-ver16#result-types)
+
 ## run sql
 
 [pagination](https://stackoverflow.com/questions/2135418/equivalent-of-limit-and-offset-for-sql-server)

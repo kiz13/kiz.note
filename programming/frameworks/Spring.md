@@ -52,6 +52,8 @@ about dependency injection, [he said](https://stackoverflow.com/questions/398908
 
 [profile via spring and profile via build tool](https://stackoverflow.com/questions/66103584/what-is-the-difference-between-profiles-via-spring-or-via-a-build-tool-like-mave)
 
+[create bean with abstract class](https://stackoverflow.com/a/48440850/11844003)
+
 ## application configuration
 
 [use spring profiles in SpringBoot (mkyong)](https://mkyong.com/spring-boot/spring-boot-profile-based-properties-and-yaml-example/)

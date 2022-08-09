@@ -11,7 +11,7 @@
 - [How to install a rpm package and its dependencies offline?](https://stackoverflow.com/questions/50648152/how-to-install-a-rpm-package-and-its-dependencies-offline)
   - download that rpm from the machine with internet connected, then ftp the file to the sever and do `rpm -ivh pkg.rpm`
   - use `yumdownloader`
-- [unzip tgz file](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal) `tar -xvzf /path/to/yourfile.tgz`
+- [unzip tgz file](https://askubuntu.com/questions/499807/how-to-unzip-tgz-file-using-the-terminal) `tar -xzvf /path/to/yourfile.tgz` [_eXtract Ze Vucking File_](https://www.reddit.com/r/ProgrammerHumor/comments/whx66x/comment/ij8a3ak/?utm_source=share&utm_medium=web2x&context=3)
   - `x` for extract
   - `v` for verbose
   - `z` for gnuzip

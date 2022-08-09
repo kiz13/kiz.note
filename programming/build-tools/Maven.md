@@ -135,7 +135,7 @@ At the heart of Maven is an Inversion of Control (IoC) container called Plexus.
 
 A Maven plugin is a Maven artifact that contains a Plugin descriptor and one or more Mojos. A Mojo can be thought of as a goal in Maven, and every goal corresponds to a Mojo. (Maven uses the term _Mojo_ bc it is a play on the word Pojo)
 
-## real
+## in practice
 
 The `mavenCentral()` alias means that dependencies are fetched from the [central Maven 2 repository](http://repo1.maven.org/maven2).
 
@@ -189,3 +189,9 @@ allprojects {
   ```
 
 [`dependencymanagement` and `dependencies`](https://stackoverflow.com/questions/2619598/differences-between-dependencymanagement-and-dependencies-in-maven)
+
+skip tests? check [official docs](https://maven.apache.org/surefire/maven-surefire-plugin/examples/skipping-tests.html)
+
+the default _plugin:goal_ of lifecycle binding for the _test_ phase on packaging `jar` or `war` is `surefire:test` check [official docs](https://maven.apache.org/guides/introduction/introduction-to-the-lifecycle.html#built-in-lifecycle-bindings)
+
+[List of predefined Maven properties](https://github.com/cko/predefined_maven_properties/blob/master/README.md)
