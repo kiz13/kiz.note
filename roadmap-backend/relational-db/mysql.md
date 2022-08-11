@@ -198,7 +198,7 @@ UPDATE my_table AS w
 - create a trigger, or
 - use some function directly in the code `insert into tbl (field1) values (substring('long-text', 1, col_length))`
 
-variable column names using prepared statements? [NO, you can only set column values as PreparedStatement values](https://stackoverflow.com/a/3136049/11844003)
+is `exists` more efficient than `count`? [yep](https://stackoverflow.com/a/5264695)
 
 ## indexing
 

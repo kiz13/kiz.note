@@ -48,6 +48,8 @@ escape single quote? use another single quote `select 'my name''s slim shady'` [
 - drop and re-adding the table
 - create a new table and moving the data over manually
 
+use `count` or `exists` to check existence? [prefer `exists`](https://stackoverflow.com/a/3271464)
+
 ## jdbc
 
 [mssql and jtds](https://stackoverflow.com/questions/4393766/differences-between-ms-sql-microsofts-jdbc-drivers-and-jtdss-driver)
