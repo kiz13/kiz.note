@@ -38,3 +38,19 @@ What does `<![CDATA[]]>` mean? [CDATA stands for Character Data](https://stackov
   5. If a header with the same ID has already been generated, a unique incrementing number is appended, starting at 1.
 
 - draw checkbox in table? [you can use html entity `&check;` \(\&check\); and `&cross;` \(\&cross;\)](https://stackoverflow.com/a/60687493/11844003)
+
+- highlight shell commands? [credits](https://stackoverflow.com/a/52586193)
+  - Shell: console, shell
+  - Bash: bash, sh, zsh
+  - PowerShell: powershell, ps
+  - DOS: dos, bat, cmd
+
+An option to highlight a "Note" and "Warning" using blockquote? [GitHub Only](https://github.com/community/community/discussions/16925)
+
+```markdown
+> **Note**
+> This is a note
+
+> **Warning**
+> This is a warning
+```

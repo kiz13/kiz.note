@@ -109,33 +109,9 @@ use `wt` command to start Windows Terminal from the command line, `wt -d .` use 
 - [Excel 格式转换](https://zhuanlan.zhihu.com/p/75404453)
 - [Excel file still so large after deleting many tabs](https://answers.microsoft.com/en-us/msoffice/forum/msoffice_excel-mso_windows8-mso_2013_release/why-is-my-excel-file-still-so-large-after-i/4d2c0170-f92a-441b-b9c6-958adba02ea3), cuz u didn't do right, try resetting the used range
 - [remove leading or trailing spaces](https://stackoverflow.com/questions/9578397/remove-leading-or-trailing-spaces-in-an-entire-column-of-data)
-
----
-
 - Transpose Data from a Row to a Column `Paste -> Transpose(转置)`
 - Compose Text with & `=A2&B2&C2&D2`
 - Transforming the Case of Text `=UPPER(A2)`
-- reserve leading zero with a leading apostrophe
-- autofill series
-- use <kbd>ctrl</kbd> + <kbd>d</kbd> to autofill with selected cell
-- auto select a cell
-
-## command line tools
-
-- [install pkg-config](https://stackoverflow.com/questions/1710922/how-to-install-pkg-config-in-windows/22363820#22363820)
-
-- If, for some reason, the gcc compiler is already installed, but the symbolic link `/usr/bin/cc` is missing, you can do with [`make CC=gcc`](https://askubuntu.com/a/1095184)
-
-- fatal error - [cygheap base mismatch detected](https://superuser.com/questions/1380238/how-can-i-fix-the-error-fatal-error-cygheap-base-mismatch-detected-when-usin)
-
-- ["perf-stat" on windows](https://stackoverflow.com/questions/34641644/is-there-a-windows-equivalent-of-the-linux-command-perf-stat)
-
-- There is a tree command in windows already, it is `tree.com`. [check](https://superuser.com/a/1312725/1233932), (`/a` for just folder and `/f` for every single file); use `//` or bash would think it is a folder name
-
-- [equivalent of `which`](https://stackoverflow.com/questions/304319/is-there-an-equivalent-of-which-on-the-windows-command-line)
-  - use `where.exe` or `Set-Alias which where.exe`
-  - use powershell `gcm` (`Get-Command`)
-    
-- [pidcat](https://github.com/JakeWharton/pidcat/issues/122)
+- escape special characters like `@`? You can use `char()` to insert a special character, e.g., to get `@STL`, use `=concat(char(58), "STL")` [credits](https://superuser.com/a/1665293)
 
 ## end

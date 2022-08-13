@@ -68,6 +68,8 @@ about dependency injection, [he said](https://stackoverflow.com/questions/398908
 
 SpringBoot uses [relaxed rules](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config.typesafe-configuration-properties.relaxed-binding) for binding `Environment` properties to `@ConfigurationProperties` beans
 
+After Spring Boot 2.0 migration: jdbcUrl is required with driverClassName? [credits](https://stackoverflow.com/a/49141541) Spring Boot 2.x changed default JDBC connection pool from Tomcat to HikariCP. Here comes incompatibility, because Hikari has no url property (but does have a jdbcUrl property), so you must change the property key from `xxx.url` to `xxx.jdbc-url`
+
 [springboot and prometheus_grafana](https://refactorfirst.com/spring-boot-prometheus-grafana)
 
 ### logging
