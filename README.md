@@ -15,6 +15,7 @@
 - [Chen Chao](https://github.com/cnfree/Journal)
 - [yihong0618 (2021)](https://github.com/yihong0618/2021)
 - [ecmadao](https://github.com/ecmadao/Coding-Guide)
+- [8483](https://github.com/8483/notes)
 
 ## Keep in mind
 
