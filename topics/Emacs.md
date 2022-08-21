@@ -1,7 +1,5 @@
 # *
 
-## #0
-
 GNU Emacs /ˈiːmæks/ (Editor MACroS)
 
 META key -- ALT
@@ -32,8 +30,6 @@ If Emacs stops responding the command, you can use `C-g` to safely terminate the
 
 exit Emacs: `C-x c`
 
-## #1
-
 `C-h` help command; `C-h i` will bring up the info directory, `C-h m` for mode help page
 
 `u` go up
@@ -52,8 +48,6 @@ If the buffer name is surrounded by asterisks, it means this buffer is not tied 
 `C-x o` switch to the other window
 
 `M-x` running commands by name
-
-## #2
 
 [Within Emacs, `~` at the beginning of a file name is expanded to your HOME directory, so you can always find your `.emacs` file with `C-x C-f ~/.emacs`.](https://superuser.com/a/138127/1233932)
 

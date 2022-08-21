@@ -53,3 +53,4 @@ search the bash history and rerun a command? [credits](https://superuser.com/a/7
 - [\(Open Group\) crontab docs](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/crontab.html)
 - [\(cnblogs\) grep命令详解](https://www.cnblogs.com/ggjucheng/archive/2013/01/13/2856896.html)
 - [\(nixCraft\) grep with examples](https://www.cyberciti.biz/faq/grep-regular-expressions/)
+- [hardware time and system time](https://unix.stackexchange.com/questions/189880/difference-between-hardware-time-and-system-time)
