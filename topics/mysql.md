@@ -200,6 +200,17 @@ UPDATE my_table AS w
 
 is `exists` more efficient than `count`? [yep](https://stackoverflow.com/a/5264695)
 
+delete with subquery as condition? [alias the subquery will work just fine](https://stackoverflow.com/a/12969601/11844003), e.g.
+
+```mysql
+DELETE e.*
+FROM tableE e
+WHERE id IN (SELECT id
+             FROM (SELECT id
+                   FROM tableE
+                   WHERE arg = 1 AND foo = 'bar') x);
+```
+
 ## indexing
 
 [two column index?](https://stackoverflow.com/a/2349824/11844003) A two column index can also be used as a single column index, but only for the column listed first. Sometimes it can be useful to have an index on `(A,B)` and another index on `(B)`

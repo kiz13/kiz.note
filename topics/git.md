@@ -40,6 +40,8 @@ add line break to the commit message? [Simon's answer](https://stackoverflow.com
 echo "hello `ls` world"
 ```
 
+handling file renames? `git mv old new` automatically updates the index. When you rename outside of Git, you will have to do the `git add new` and `git rm old` to stage the changes to the index. [credits](https://stackoverflow.com/questions/2641146/handling-file-renames-in-git#comment2656944_2641146)
+
 ### undo
 
 [undo the last git add?](https://stackoverflow.com/questions/12132272/how-can-you-undo-the-last-git-add) `git reset` will unstage all the files you've added after your last commit
@@ -172,6 +174,10 @@ git error: failed to push some refs to remote, [for me, I just needed to run "gi
 
 [about `core.autocrlf`](https://stackoverflow.com/questions/2825428/why-should-i-use-core-autocrlf-true-in-git)
 
+[Why remote repo filename has different case than local](https://stackoverflow.com/questions/32616322/remote-repo-filename-has-different-case-than-local-but-no-change-seen)
+
+[Case-sensitive path collisions on case-insensitive file system when I do git clone](https://stackoverflow.com/questions/63468346/case-sensitive-path-collisions-on-case-insensitive-file-system-when-i-do-git-clo)
+
 ## helping links
 
 - [Git User Manual](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/user-manual.html)
@@ -185,5 +191,6 @@ git error: failed to push some refs to remote, [for me, I just needed to run "gi
 - [Git Best Practices](https://sethrobertson.github.io/GitBestPractices/)
 - [bitbucket - no foxtrot merge](https://bitbucket.org/blog/no-foxtrot-merges-allowed)
 - [GitHub Star History](https://star-history.com/)
+- [Oh Shit, Git!?!](https://ohshitgit.com/)
 
 ## end

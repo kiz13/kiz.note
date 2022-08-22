@@ -18,6 +18,11 @@ send increment value on each request?
 
 the response body contains garbled (chinese) character | [响应结果乱码 \(51cto\)](https://blog.51cto.com/ydhome/1864340) HTTP Request > Add PostProcessor > BeanShell PostProcessor > `prev.setDataEncoding("UTF-8")`
 
+[how to set both query parameters and request body?](https://stackoverflow.com/a/49430194/11844003) append parameters to the url, then set body data. You can ONLY fill data on one tab, Parameters or Body Data, not both. See so
+- [is there a way to send both?](https://stackoverflow.com/questions/32956089/send-both-parameters-and-body-data-with-jmeter-http-request)
+- [unable to click parameter tab after adding body data](https://stackoverflow.com/questions/68662259/jmeter-unable-to-click-parameter-tab-when-added-body-data)
+- [you can send JSON payload in "Parameters"](https://stackoverflow.com/a/51609079/11844003)
+
 ## Chrome
 
 (chrome) <kbd>Shift</kbd> + <kbd>Esc</kbd> opens task manager

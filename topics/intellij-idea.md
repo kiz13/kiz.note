@@ -8,6 +8,7 @@
 - [ ] [the selected keyboard layout get ignored](https://stackoverflow.com/questionws/16623189/intellij-ignores-the-selected-keyboard-layout)
 - [ ] create a file named `template.json`, type some standard json data, it says **json property not allowed**
 - [ ] [support color emoji on Windows](https://youtrack.jetbrains.com/issue/JBR-2917)
+- [ ] [anchor links not working](https://youtrack.jetbrains.com/issue/IDEA-238096)
 
 ---
 
