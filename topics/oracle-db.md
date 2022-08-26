@@ -8,6 +8,8 @@ context: **11g** Windows 10
 
 [no suitable driver found?](https://stackoverflow.com/questions/12103369/sqlexception-no-suitable-driver-found-for-jdbcoraclethin-localhost1521-or) The "ojdbc.jar" is not in the CLASSPATH of your application
 
+[why do I need to quote my table's column name when running the query?](https://stackoverflow.com/questions/38328169/oracle-db-quote-column-names) If you name a schema object using a quoted identifier, then you must use the double quotation marks whenever you refer to that object.
+
 ## table of contents
 
 - [安装前后需要注意的点](#安装前后需要注意的点)

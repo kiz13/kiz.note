@@ -149,6 +149,8 @@
 
 ## S
 
+- [**Screen burn-in**](https://en.wikipedia.org/wiki/Screen_burn-in) is a permanent discoloration of areas on an electronic display.
+
 - **Spinnin' Records** is a Dutch electronic music [record label](https://en.wikipedia.org/wiki/Record_label). In September 2017, Warner Music Group acquired Spinnin' Records for over $100 million.
 
 - The **square foot (平方英尺)** (plural **square feet**; abbreviated sq. ft, sf, or ft²) is an imperial unit. 1 square foot is equivalent to 144 square inches, around 0.09290304 square meters

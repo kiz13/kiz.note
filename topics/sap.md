@@ -166,6 +166,13 @@ TO_TIMESTAMP(TO_VARCHAR(COALESCE("CreateDate",'19700101'), 'YYYYMMDD') || ' ' ||
 
 [Pagination query](https://help.sap.com/docs/SAP_ASE/e0d4539d39c34f52ae9ef822c2060077/26d84b4ddae94fed89d4e7c88bc8d1e6.html?version=16.0.4.0&locale=en-US) e.g., `select ... limit 13 offset 31`
 
+[check table's columns information](https://answers.sap.com/answers/10724035/view.html)
+```sql
+select *
+from sys.columns
+where schema_name = 'what' and table_name = 'what';
+```
+
 ## helping links
 
 [\(biuan\) sbo sdk docs](https://biuan.com/)

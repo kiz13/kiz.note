@@ -100,3 +100,10 @@ The `normalize` method of `Path` removes any redundant elements, which includes 
 - There can only be one null key in `HashMap`
 
 - The methods `asList` and `subList` return immutable Lists because they are "backed" by the underlying array and list, respectively. If u structurally modify the backing list, u get a concurrent modification exception.
+
+## threads
+
+> ReentrantLock is an advanced tool for situations where intrinsic locking
+is not practical. Use it if you need its advanced features: timed, polled,
+or interruptible lock acquisition, fair queueing, or non-block-structured
+locking. Otherwise, prefer `synchronized`.
